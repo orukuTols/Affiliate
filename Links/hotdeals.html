@@ -6,7 +6,7 @@
     <title>Hot-Deals</title>
     <style>
         body {
-           background-color: gray;
+           background-color: rgb(149, 118, 77);
             width: 100%;
             margin: 0;
        
@@ -64,28 +64,52 @@
 
         .size div {
            
-          background-color: rgb(122, 0, 24);
+       
           
-          border-radius: 8%;
+      
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+
           
         }
 
+        .imageDiv {
+          width: 100%;
+          background-color: black;
+          animation: colorChange 3s infinite;
+}
 
-        #Container div img{
-            width: 100%;
+@keyframes colorChange {
+ 
+  50% {background-image:  linear-gradient(black, grey);}
+ 
+
+  75% {background-image: conic-gradient(gray,black,darkblue)}
+}
+   
+        .Adiv {
+          width: 100%;
+          background-color: whitesmoke;
+
         }
 
-
      
+        #Container div img{
+            width: 100%;
+            height: 20vh;
+            border: 3px solid orange;
+        }
+
+         
+    
+      
         a {
           font-family: sans-serif;
         
-          color: white;
-            text-decoration:  underline orange;
+          color: black;
+            text-decoration:  underline blue;
               font-size: x-large;
         
             
@@ -95,8 +119,9 @@
             
           
      a:hover {
-      color: black;
-      text-decoration:  underline aquamarine;
+      color: red;
+      
+      text-decoration:  underline black;
      }
      
 
@@ -185,7 +210,28 @@
  a {
    font-size: x-large;
  }
+
+ #Container div img{
+            width: 100%;
+            height: 30vh;
+        }
+
 }
+
+@media only screen and (min-width: 1500px) {
+
+
+
+#Container { 
+width: 65%;
+}
+
+
+
+
+
+}
+
 
 
         
@@ -195,7 +241,6 @@
     </style>
 </head>
 <body>
-  
     <div id="Intro">
         <h1>Hot-Deals</h1>
 
@@ -205,56 +250,56 @@
     </div>
     <div id="Container">
 
-   <div class="size">
-
-   <div> <img src="online.jpg" alt="">
-    </div>
-
-   <div><strong><a href="">Discount on the new Iphone</a></strong></p></div>
-   </div>
-
-   <div class="size">
-
-    <div> <img src="online.jpg" alt="">
-     </div>
- 
-    <div><strong><a href="">Free Headphones</a></strong></p></div>
-    </div>
-
-    
-    <div class="size">
-
-        <div> <img src="online.jpg" alt="">
-         </div>
-     
-        <div><strong><a href="">Free Iphone 14</a></strong></p></div>
+      <div class="size">
+   
+      <div class="imageDiv"> <img src="iphoneE.jpg" alt="">
+       </div>
+   
+      <div class="Adiv"><strong><a href="https://www.jumia.com.ng/apple-iphone-11-pro-5.8-256gb-rom-4gb-ram-4g-lte-single-sim-esim.-367935012.html">24% Discount on Iphone 11 Pro</a></strong></p></div>
+      </div>
+   
+      <div class="size">
+   
+       <div class="imageDiv"> <img src="redimi.jpg" alt="">
         </div>
-     
-        <div class="size">
-
-            <div> <img src="online.jpg" alt="">
-             </div>
-         
-            <div><strong><a href="">Free Neflix for 3months</a></strong></p></div>
+    
+       <div class="Adiv"><strong><a href="https://www.jumia.com.ng/xiaomi-redmi-14c-6.88-8gb-ram256gb-rom-android-12-midnight-black-373379432.html">Xiomi Redimi 14C 41% off</a></strong></p></div>
+       </div>
+   
+       
+       <div class="size">
+   
+           <div class="imageDiv"> <img src="macbook.jpg">
             </div>
-         
-            <div class="size">
-
-                <div> <img src="online.jpg" alt="">
-                 </div>
-             
-                <div><strong><a href="">Valentines Day's special</a></strong></p></div>
+        
+           <div class="Adiv"><strong><a href="https://www.jumia.com.ng/renewed-macbook-pro-laptop-a1278-13.3-inch-core-i5-2.5ghz-8gb-ram-500gb-enar-keyboard-387111554.html">Macbok Pro 65% off</a></strong></p></div>
+           </div>
+        
+           <div class="size">
+   
+               <div class="imageDiv"> <img src="blue.jpg">
                 </div>
-             
-                <div class="size">
-
-                    <div> <img src="online.jpg" alt="">
-                     </div>
-                 
-                    <div><strong><a href="">Black Friday</a></strong></p></div>
+            
+               <div class="Adiv"><strong><a href="https://www.jumia.com.ng/generic-wireless-fingerprint-touch-blutooth-headset-earphone-stereo-sound-in-ear-earbuds-234743274.html">Wireless-Earphone 55% off</a></strong></p></div>
+               </div>
+            
+               <div class="size">
+   
+                   <div class="imageDiv"> <img src="casual.jpg">
                     </div>
-                 
-    </div>
+                
+                   <div class="Adiv"><strong><a href="https://www.jumia.com.ng/alagzi-mens-trendy-casual-sneakers-white-355443098.html">Algazi-Men's sneaker 47% off</a></strong></p></div>
+                   </div>
+                
+                   <div class="size">
+   
+                       <div class="imageDiv"> <img src="power.jpg" alt="">
+                        </div>
+                    
+                       <div class="Adiv"><strong><a href="https://www.jumia.com.ng/itel-30000mah-type-c-output-fast-charging-power-bank-free-gift-223347431.html">Itel Power Bank 25% off</a></strong></p></div>
+                       </div>
+                    
+       </div>
     
 </body>
 </html>

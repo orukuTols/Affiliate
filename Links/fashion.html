@@ -39,6 +39,7 @@
           text-align: center;
         }
 
+        
         #Container {
             width: 100%;
          display: grid;
@@ -64,28 +65,53 @@
 
         .size div {
            
-          background-color: darkblue;
-          border-radius: 8%;
+       
+          
+      
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+
           
         }
 
+        .imageDiv {
+          width: 100%;
+          background-color: goldenrod;
+          animation: colorChange 14s infinite;
+}
 
-        #Container div img{
-            width: 100%;
+@keyframes colorChange {
+ 
+  50% {background-image:  linear-gradient(90deg,rgb(167, 167, 17),black, darkblue);}
+ 
+
+  75% {background-image: conic-gradient(gray,black,darkblue)}
+}
+   
+        .Adiv {
+          width: 100%;
+          background-color: white;
         }
 
+     
+        #Container div img{
+            width: 100%;
+            height: 20vh;
+            border: 3px solid white;
+        }
 
+         
+    
+      
         a {
           font-family: sans-serif;
         
-          color: white;
+          color: black;
             text-decoration:  underline orange;
               font-size: x-large;
-            
+        
             
         }
 
@@ -93,12 +119,11 @@
             
           
      a:hover {
-      color: crimson;
-      text-decoration:  underline white;
+      color: black;
+      text-decoration:  underline aquamarine;
      }
      
 
-   
 
 
         @media only screen and (max-width: 300px) {
@@ -184,12 +209,27 @@
  a {
    font-size: x-large;
  }
+
+ #Container div img{
+            width: 100%;
+            height: 30vh;
+        }
+
+}
+
+@media only screen and (min-width: 1500px) {
+
+
+
+#Container { 
+width: 65%;
 }
 
 
-        
-      
 
+
+
+}
    
     </style>
 </head>
@@ -204,56 +244,58 @@
     </div>
     <div id="Container">
 
-   <div class="size">
+      <div class="size">
+   
+      <div class="imageDiv"> <img src="miniSkirt.jpg" alt="">
+       </div>
+   
+      <div class="Adiv"><strong><a href="https://www.jumia.com.ng/generic-girls-tennis-pleated-skirt-high-waisted-mini-skirts-school-black-l-242008573.html">Mini-skirt Sales 33% off</a></strong></p></div>
 
-   <div> <img src="fashion.jpg" alt="">
-    </div>
-
-   <div><strong><a href="">Mini skirt sales</a></strong></p></div>
-   </div>
-
-   <div class="size">
-
-    <div> <img src="fashion.jpg" alt="">
-     </div>
- 
-    <div><strong><a href="">Air jordans</a></strong></p></div>
-    </div>
-
-    
-    <div class="size">
-
-        <div> <img src="fashion.jpg" alt="">
-         </div>
-     
-        <div><strong><a href="">Festive Gown</a></strong></p></div>
+      </div>
+   
+      <div class="size">
+   
+       <div class="imageDiv"> <img src="shoe.jpg" alt="">
         </div>
-     
-        <div class="size">
-
-            <div> <img src="fashion.jpg" alt="">
-             </div>
-         
-            <div><strong><a href="">Men's Suit</a></strong></p></div>
+    
+       <div class="Adiv"><strong><a href="https://www.jumia.com.ng/alagzi-mens-casual-high-top-shoes-running-sneakers-beige-67524091.html">Algazi Men's 30% off</a></strong></p></div>
+       </div>
+   
+       
+       <div class="size">
+   
+           <div class="imageDiv"> <img src="ashion.jpg" alt="">
             </div>
-         
-            <div class="size">
-
-                <div> <img src="fashion.jpg" alt="">
-                 </div>
-             
-                <div><strong><a href="">heels for queens</a></strong></p></div>
+        
+           <div class="Adiv"><strong><a href="">Ashion Martin 49% off</a></strong></p></div>
+           </div>
+        
+           <div class="size">
+   
+               <div class="imageDiv"> <img src="danami.jpg" alt="">
                 </div>
-             
-                <div class="size">
-
-                    <div> <img src="fashion.jpg" alt="">
-                     </div>
-                 
-                    <div><strong><a href="">Boxers for boxers</a></strong></p></div>
+            
+               <div class="Adiv"><strong><a href="https://www.jumia.com.ng/danami-women-black-red-contrast-off-white-crop-hoodie-64832122.html">Danami Women 9,900 naira</a></strong></p></div>
+               </div>
+            
+               <div class="size">
+   
+                   <div class="imageDiv"> <img src="danamiT.jpg" alt="">
                     </div>
-                 
-    </div>
+                
+                   <div class="Adiv"><strong><a href="https://www.jumia.com.ng/danami-tie-die-printed-crop-hoodie-black-71329496.html">Danami Tie & Dies 9,999 naira</a></strong></p></div>
+                   </div>
+                
+                   <div class="size">
+   
+                       <div class="imageDiv"> <img src="kingKartel.jpg" alt="">
+                        </div>
+                    
+                       <div class="Adiv"><strong><a href="https://www.jumia.com.ng/kingskartel-kings-kartel-stylish-sweatshirt-joggers-pant-brown-black-249924598.html">Kings-Kartel Combo 23% Off</a></strong></p></div>
+                       </div>
+                    
+       </div>
+       
     
 </body>
 </html>

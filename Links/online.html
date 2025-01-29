@@ -64,23 +64,45 @@
 
         .size div {
            
-          background-color: rgb(122, 0, 24);
+       
           
-          border-radius: 8%;
+      
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+
           
         }
 
+        .imageDiv {
+          width: 100%;
+          background-color: black;
+          animation: colorChange 14s infinite;
+}
 
-        #Container div img{
-            width: 100%;
+@keyframes colorChange {
+ 
+  50% {background-image:  linear-gradient(black, grey);}
+ 
+
+  75% {background-image: conic-gradient(gray,black,darkblue)}
+}
+   
+        .Adiv {
+          width: 100%;
+          background-color: brown;
         }
 
-
      
+        #Container div img{
+            width: 100%;
+            height: 20vh;
+        }
+
+         
+    
+      
         a {
           font-family: sans-serif;
         
@@ -185,7 +207,28 @@
  a {
    font-size: x-large;
  }
+
+ #Container div img{
+            width: 100%;
+            height: 30vh;
+        }
+
 }
+
+@media only screen and (min-width: 1500px) {
+
+
+
+#Container { 
+width: 65%;
+}
+
+
+
+
+
+}
+
 
 
         
@@ -209,51 +252,51 @@
 
    <div class="size">
 
-   <div> <img src="online.jpg" alt="">
+   <div class="imageDiv"> <img src="SurveyF.svg" alt="">
     </div>
 
-   <div><strong><a href="">Survey Forms</a></strong></p></div>
+   <div class="Adiv"><strong><a href="">Survey Forms</a></strong></p></div>
    </div>
 
    <div class="size">
 
-    <div> <img src="online.jpg" alt="">
+    <div class="imageDiv"> <img src="apptest.svg" alt="">
      </div>
  
-    <div><strong><a href="">App testing</a></strong></p></div>
+    <div class="Adiv"><strong><a href="">App testing</a></strong></p></div>
     </div>
 
     
     <div class="size">
 
-        <div> <img src="online.jpg" alt="">
+        <div class="imageDiv"> <img src="webD.svg" alt="">
          </div>
      
-        <div><strong><a href="">Web designer</a></strong></p></div>
+        <div class="Adiv"><strong><a href="">Web designer</a></strong></p></div>
         </div>
      
         <div class="size">
 
-            <div> <img src="online.jpg" alt="">
+            <div class="imageDiv"> <img src="FullS.svg" alt="">
              </div>
          
-            <div><strong><a href="">Full stack Developer</a></strong></p></div>
+            <div class="Adiv"><strong><a href="">Full stack Developer</a></strong></p></div>
             </div>
          
             <div class="size">
 
-                <div> <img src="online.jpg" alt="">
+                <div class="imageDiv"> <img src="Junior.svg" alt="">
                  </div>
              
-                <div><strong><a href="">Junior frontend devs</a></strong></p></div>
+                <div class="Adiv"><strong><a href="">Junior frontend devs</a></strong></p></div>
                 </div>
              
                 <div class="size">
 
-                    <div> <img src="online.jpg" alt="">
+                    <div class="imageDiv"> <img src="Graphics.svg" alt="">
                      </div>
                  
-                    <div><strong><a href="">Graphic Designer</a></strong></p></div>
+                    <div class="Adiv"><strong><a href="">Graphic Designer</a></strong></p></div>
                     </div>
                  
     </div>

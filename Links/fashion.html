@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hot-Deals</title>
+    <title>Fashion-deals</title>
     <style>
         body {
-           background-color: rgb(149, 118, 77);
+           background-color: gray;
             width: 100%;
             margin: 0;
        
@@ -14,7 +14,7 @@
 
         h1 {
             color: white;
-            background-color: crimson;
+            background-color: darkblue;
           
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -25,7 +25,7 @@
             width: 100%;
             justify-content: center;
             align-items: center;
-           background-image: linear-gradient(90deg, rgb(134, 107, 107), rgb(17, 74, 107), black);
+           background-image: linear-gradient(90deg, rgb(184, 136, 143), rgb(114, 13, 114), rgb(108, 108, 13));
             position: sticky;
             top: 0;
        
@@ -39,6 +39,7 @@
           text-align: center;
         }
 
+        
         #Container {
             width: 100%;
          display: grid;
@@ -78,19 +79,17 @@
         .imageDiv {
           width: 100%;
           background-color: black;
-        }
-   
+}
         .Adiv {
           width: 100%;
-          background-color: whitesmoke;
-
+          background-color: white;
         }
 
      
         #Container div img{
             width: 100%;
             height: 35vh;
-            border: 3px solid black;
+            border: 3px solid white;
         }
 
          
@@ -100,10 +99,8 @@
           font-family: sans-serif;
         
           color: black;
-            text-decoration:  underline blue;
-           font-size: large;
-           font-weight: bold;
-           font-family: Arial, Helvetica, sans-serif;
+            text-decoration:  underline orange;
+              font-size: x-large;
         
             
         }
@@ -112,43 +109,10 @@
             
           
      a:hover {
-      color: red;
-      
-      text-decoration:  underline black;
+      color: black;
+      text-decoration:  underline aquamarine;
      }
      
-
-     @media only screen and (max-height: 680px) { 
-
-      #Container div img{
-            width: 100%;
-            height: 45vh;
-            border: 3px solid orange;
-        }
-     }
-
-     
-     @media only screen and (max-height: 580px) { 
-
-#Container div img{
-      width: 100%;
-      height: 50vh;
-      border: 3px solid orange;
-  }
-
-}
-
-
-@media only screen and (max-height: 400px) { 
-
-#Container div img{
-      width: 100%;
-      height: 60vh;
-      border: 3px solid orange;
-  }
-
-
-}
 
 
 
@@ -169,6 +133,9 @@
         }
 
 
+ a {
+   font-size: large;
+ }
 }
 
 
@@ -189,7 +156,9 @@
         }
 
 
-
+ a {
+   font-size: large;
+ }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -206,32 +175,35 @@
     width: 100%;
   }
 
+  a {
+    font-size: x-large;
+  }
 }
 
 
 @media only screen and (min-width: 1000px) {
 
-body {
+    body {
+   
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+ justify-content: center;
+ align-items: center;  
+ }
 
-width: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;  
-}
+ #Container { 
+   width: 85%;
+ }
 
-#Container { 
-width: 85%;
-}
+ a {
+   font-size: x-large;
+ }
 
-a {
-font-size: x-large;
-}
-
-#Container div img{
-        width: 100%;
-        height: 30vh;
-    }
+ #Container div img{
+            width: 100%;
+            height: 30vh;
+        }
 
 }
 
@@ -248,75 +220,72 @@ width: 65%;
 
 
 }
-
-
-
-        
-      
-
    
     </style>
 </head>
 <body>
+  
     <div id="Intro">
-        <h1>Hot-Deals</h1>
+        <h1> Fashion-deals</h1>
 
-        <p>Dont miss this Limited-time Offers! Exclusive for the first 100 Users!
-            <br>with Tolu Ad's
+        <p>Get exclusive discounts on your favorite fashion brands  <br>
+          With Tolu's Ad's
         </p>
     </div>
     <div id="Container">
 
       <div class="size">
    
-      <div class="imageDiv"> <img src="iphoneE.jpg" alt="">
+      <div class="imageDiv"> <img src="miniSkirt.jpg" alt="">
        </div>
    
-      <div class="Adiv"><strong><a href="https://www.jumia.com.ng/apple-iphone-11-pro-5.8-256gb-rom-4gb-ram-4g-lte-single-sim-esim.-367935012.html">24% Discount on Iphone 11 Pro</a></strong></p></div>
+      <div class="Adiv"><strong><a href="https://www.jumia.com.ng/generic-girls-tennis-pleated-skirt-high-waisted-mini-skirts-school-black-l-242008573.html">Mini-skirt Sales 33% off</a></strong></p></div>
+
       </div>
    
       <div class="size">
    
-       <div class="imageDiv"> <img src="redmi.webp" alt="">
+       <div class="imageDiv"> <img src="newS.jpg" alt="">
         </div>
     
-       <div class="Adiv"><strong><a href="https://www.jumia.com.ng/xiaomi-redmi-14c-6.88-8gb-ram256gb-rom-android-12-midnight-black-373379432.html">Xiomi Redimi 14C 41% off</a></strong></p></div>
+       <div class="Adiv"><strong><a href="https://www.jumia.com.ng/alagzi-mens-casual-high-top-shoes-running-sneakers-beige-67524091.html">Algazi Men's 30% off</a></strong></p></div>
        </div>
    
        
        <div class="size">
    
-           <div class="imageDiv"> <img src="macbook.jpg">
+           <div class="imageDiv"> <img src="ashion.jpg" alt="">
             </div>
         
-           <div class="Adiv"><strong><a href="https://www.jumia.com.ng/renewed-macbook-pro-laptop-a1278-13.3-inch-core-i5-2.5ghz-8gb-ram-500gb-enar-keyboard-387111554.html">Macbok Pro 65% off</a></strong></p></div>
+           <div class="Adiv"><strong><a href="">Ashion Martin 49% off</a></strong></p></div>
            </div>
         
            <div class="size">
    
-               <div class="imageDiv"> <img src="blue.jpg">
+               <div class="imageDiv"> <img src="danami.jpg" alt="">
                 </div>
             
-               <div class="Adiv"><strong><a href="https://www.jumia.com.ng/generic-wireless-fingerprint-touch-blutooth-headset-earphone-stereo-sound-in-ear-earbuds-234743274.html">Wireless-Earphone 55% off</a></strong></p></div>
+               <div class="Adiv"><strong><a href="https://www.jumia.com.ng/danami-women-black-red-contrast-off-white-crop-hoodie-64832122.html">Danami Women 9,900 naira</a></strong></p></div>
                </div>
             
                <div class="size">
    
-                   <div class="imageDiv"> <img src="casual.jpg">
+                   <div class="imageDiv"> <img src="danamiT.jpg" alt="">
                     </div>
                 
-                   <div class="Adiv"><strong><a href="https://www.jumia.com.ng/alagzi-mens-trendy-casual-sneakers-white-355443098.html">Algazi-Men's sneaker 47% off</a></strong></p></div>
+                   <div class="Adiv"><strong><a href="https://www.jumia.com.ng/danami-tie-die-printed-crop-hoodie-black-71329496.html">Danami Tie & Dies 9,999 naira</a></strong></p></div>
                    </div>
                 
                    <div class="size">
    
-                       <div class="imageDiv"> <img src="power.jpg" alt="">
+                       <div class="imageDiv"> <img src="kingKartel.jpg" alt="">
                         </div>
                     
-                       <div class="Adiv"><strong><a href="https://www.jumia.com.ng/itel-30000mah-type-c-output-fast-charging-power-bank-free-gift-223347431.html">Itel Power Bank 25% off</a></strong></p></div>
+                       <div class="Adiv"><strong><a href="https://www.jumia.com.ng/kingskartel-kings-kartel-stylish-sweatshirt-joggers-pant-brown-black-249924598.html">Kings-Kartel Combo 23% Off</a></strong></p></div>
                        </div>
                     
        </div>
+       
     
 </body>
 </html>

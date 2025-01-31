@@ -6,7 +6,7 @@
     <title>Gifts</title>
     <style>
         body {
-           background-color: gray;
+           background-color: rgb(149, 118, 77);
             width: 100%;
             margin: 0;
        
@@ -14,7 +14,7 @@
 
         h1 {
             color: white;
-            background-color: darkblue;
+            background-color: crimson;
           
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -25,7 +25,7 @@
             width: 100%;
             justify-content: center;
             align-items: center;
-           background-image: linear-gradient(90deg, rgb(87, 5, 22), grey, rgb(94, 11, 94));
+           background-image: linear-gradient(90deg, rgb(134, 107, 107), rgb(17, 74, 107), black);
             position: sticky;
             top: 0;
        
@@ -64,30 +64,47 @@
 
         .size div {
            
-          background-color:black;
-          border-radius: 8%;
+       
+          
+      
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+
           
         }
 
+        .imageDiv {
+          width: 100%;
+          background-color: black;
+        }
+   
+        .Adiv {
+          width: 100%;
+          background-color: whitesmoke;
 
-        #Container div img{
-            width: 100%;
-            
         }
 
+     
+        #Container div img{
+            width: 100%;
+            height: 35vh;
+            border: 3px solid black;
+        }
 
+         
+    
       
         a {
           font-family: sans-serif;
         
-          color: white;
-            text-decoration:  underline orange;
-              font-size: x-large;
-              background-color: black;
+          color: black;
+            text-decoration:  underline blue;
+           font-size: large;
+           font-weight: bold;
+           font-family: Arial, Helvetica, sans-serif;
+        
             
         }
 
@@ -95,15 +112,46 @@
             
           
      a:hover {
-      color: crimson;
-      text-decoration:  underline aquamarine;
+      color: red;
+      
+      text-decoration:  underline black;
      }
      
 
+     @media only screen and (max-height: 680px) { 
 
-       
+      #Container div img{
+            width: 100%;
+            height: 45vh;
+            border: 3px solid orange;
+        }
+     }
 
-       
+     
+     @media only screen and (max-height: 580px) { 
+
+#Container div img{
+      width: 100%;
+      height: 50vh;
+      border: 3px solid orange;
+  }
+
+}
+
+
+
+
+@media only screen and (max-height: 400px) { 
+
+#Container div img{
+      width: 100%;
+      height: 60vh;
+      border: 3px solid orange;
+  }
+
+
+}
+
 
 
         @media only screen and (max-width: 300px) {
@@ -123,9 +171,6 @@
         }
 
 
- a {
-   font-size: large;
- }
 }
 
 
@@ -146,9 +191,7 @@
         }
 
 
- a {
-   font-size: large;
- }
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -165,31 +208,49 @@
     width: 100%;
   }
 
-  a {
-    font-size: x-large;
-  }
 }
 
 
 @media only screen and (min-width: 1000px) {
 
-    body {
-   
-   width: 100%;
-   display: flex;
-   flex-direction: column;
- justify-content: center;
- align-items: center;  
- }
+body {
 
- #Container { 
-   width: 85%;
- }
-
- a {
-   font-size: x-large;
- }
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
 }
+
+#Container { 
+width: 85%;
+}
+
+a {
+font-size: x-large;
+}
+
+#Container div img{
+        width: 100%;
+        height: 50vh;
+    }
+
+}
+
+@media only screen and (min-width: 1500px) {
+
+
+
+#Container { 
+width: 65%;
+}
+
+
+
+
+
+}
+
 
 
         
@@ -199,67 +260,65 @@
     </style>
 </head>
 <body>
-  
     <div id="Intro">
-        <h1>Gift Cards</h1>
+        <h1>Hot-Deals</h1>
 
-        <p>Claim free gift cards from top brands like amazon, walmart for 
-            completing simple tasks  <br>
-          With Tolu's Ad's
+        <p>Dont miss this Limited-time Offers! Exclusive for the first 100 Users!
+            <br>with OG Ad's
         </p>
     </div>
     <div id="Container">
 
-   <div class="size">
-
-   <div> <img src="gift.jpg" alt="">
-    </div>
-
-   <div><strong><a href="">10 dollars</a></strong></p></div>
-   </div>
-
-   <div class="size">
-
-    <div> <img src="gift.jpg" alt="">
-     </div>
- 
-    <div><strong><a href="">2 dollars</a></strong></p></div>
-    </div>
-
-    
-    <div class="size">
-
-        <div> <img src="gift.jpg" alt="">
-         </div>
-     
-        <div><strong><a href="">30 dollars</a></strong></p></div>
+      <div class="size">
+   
+      <div class="imageDiv"> <img src="gift.jpg" alt="">
+       </div>
+   
+      <div class="Adiv"><strong><a href="">Download app for 2USD</a></strong></p></div>
+      </div>
+   
+      <div class="size">
+   
+       <div class="imageDiv"> <img src="gift.jpg" alt="">
         </div>
-     
-        <div class="size">
-
-            <div> <img src="gift.jpg" alt="">
-             </div>
-         
-            <div><strong><a href="">Coupons</a></strong></p></div>
+    
+       <div class="Adiv"><strong><a href="">Sign up for chance to win 10USD</a></strong></p></div>
+       </div>
+   
+       
+       <div class="size">
+   
+           <div class="imageDiv"> <img src="gift.jpg">
             </div>
-         
-            <div class="size">
-
-                <div> <img src="gift.jpg" alt="">
-                 </div>
-             
-                <div><strong><a href="">Spin  the wheel</a></strong></p></div>
+        
+           <div class="Adiv"><strong><a href="">Complete Survey to win 4USD</a></strong></p></div>
+           </div>
+        
+           <div class="size">
+   
+               <div class="imageDiv"> <img src="gift.jpg">
                 </div>
-             
-                <div class="size">
-
-                    <div> <img src="gift.jpg" alt="">
-                     </div>
-                 
-                    <div><strong><a href="">Big chances</a></strong></p></div>
+            
+               <div class="Adiv"><strong><a href="">Complete Simple tasks to win 3USD</a></strong></p></div>
+               </div>
+            
+               <div class="size">
+   
+                   <div class="imageDiv"> <img src="gift.jpg">
                     </div>
-                 
-    </div>
+                
+                   <div class="Adiv"><strong><a href="">Test apps for chance to win 10USD</a></strong></p></div>
+                   </div>
+                
+                   <div class="size">
+   
+                       <div class="imageDiv"> <img src="gift.jpg" alt="">
+                        </div>
+                    
+                       <div class="Adiv"><strong><a href="">Share  to friends and win up to 10USD</a></strong></p></div>
+                       </div>
+                    
+       </div>
     
 </body>
 </html>

@@ -6,7 +6,7 @@
     <title>Online-Jobs</title>
     <style>
         body {
-           background-color: gray;
+           background-color: rgb(0, 0, 85);
             width: 100%;
             margin: 0;
        
@@ -45,7 +45,8 @@
          grid-template-columns: 1fr 1fr;    
          grid-template-rows: 1fr;
          justify-items: center;
-        grid-gap: 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 35px;
         
         }
 
@@ -61,17 +62,16 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            transition: transform 0.5s
-             ease-in-out,  box-shadow 0.5s ease, border-radius 0.5s ease;
+            transition:  box-shadow 1s ease, border-radius 0.5s ease;
             
-             background-color: rgb(11, 11, 94);
+             background-color: white;
              
           
         }
 
    .size:hover {
     background-color: aliceblue;
-    transform: scale(1.05);
+ 
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
     border-radius: 4%;
    }
@@ -200,9 +200,7 @@
 
 
 @media only screen and (max-width: 500px) {
-  body {
-    background-color: lightblue;
-  }
+ 
  
 
   #Container {
@@ -215,7 +213,9 @@
         
         }
 
-
+        #Intro p {
+font-size: xx-large;
+    }
 
 
 }
@@ -233,6 +233,10 @@
   #Container { 
     width: 100%;
   }
+
+  #Intro p {
+font-size: x-large;
+    }
 
  
 }
@@ -262,6 +266,10 @@
             height: 50vh;
         }
 
+    #Intro p {
+font-size: xx-large;
+    }
+
 }
 
 @media only screen and (min-width: 1500px) {
@@ -280,13 +288,36 @@ width: 65%;
 
 button {
  
-  font-size: large;
+  font-size: x-large;
   padding: 1%;
   font-weight: bold;
-  font-family: sans-serif;
+   
   border-radius: 4%;
   margin-top: 1%;
+  background-color:  burlywood
+  ;
+
 }
+
+button a {
+  color: blue;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+button:hover {
+padding: 1.5%;
+  font-weight: bold;
+
+  border-radius: 10%;
+  background-color: rgb(45, 4, 87);
+}
+
+button a:hover {
+  color: white;
+}
+
+
 
 
 

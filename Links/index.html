@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odins Library</title>
+  <link rel="stylesheet" href="admin.css">
+  <script src="admin.js"></script>
+</head>
+<body>
+  
+  <div id="Lib">
+<h1>Odin's Library</h1>
+<div class="marcus">
+<p> <strong>Marcus Tullius Cicero</strong> <br>
+  <br>
+  "A room without books is like a body without a soul." 
+  </p>
+</div>
+  </div>
+
+  <div id="Container">
+    <div class="add">
+
+  <form id="form" autocomplete="on"   >
+<label for="title">
+  Title:
+<input type="text" id="title" name="title" minlength="3" required>
+</label>
+
+  <br>
+  <br>
+<label for="author">
+  Author:
+<input type="text" id="author" name="author"  minlength="3" maxlength="20" required>
+</label>
+
+<br>
+<br>
+<label for="pages">
+Pages:
+<input type="number" id="pages" name="pageNum"  min="3"  required>
+</label>
+
+<br>
+<br>
+<label for="genre">
+Genre: <br>
+<select name="genre" id="genre" required>
+  <option value="Fiction">Fiction</option>
+  <option value="Novel">Novel</option>
+  <option value="Non-fiction">Non-fiction</option>
+  <option value="Fantsy">Fantsy</option>
+  <option value="Other">Other</option>
+</select>
+</label>
+ <br>
+ <br>
+<button type="submit" value="submit" onclick="doit()"  id="Add" >Create!</button>
+  </form>
+    </div>
+
+
+    <div id="newBooks">
+      
+   <div class="ADD">
+    
+   </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

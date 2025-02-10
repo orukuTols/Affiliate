@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion-deals</title>
+    <title>Online-Jobs</title>
     <style>
-  body {
-           background-color: rgb(72, 102, 13);
+        body {
+           background-color: rgb(0, 0, 85);
             width: 100%;
             margin: 0;
        
@@ -14,7 +14,7 @@
 
         h1 {
             color: white;
-            background-color: green;
+            background-color: rgb(126, 20, 41);
           
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -25,7 +25,7 @@
             width: 100%;
             justify-content: center;
             align-items: center;
-           background-image: linear-gradient(90deg, rgb(134, 107, 107), rgb(160, 117, 9), black);
+           background-image: linear-gradient(90deg, rgb(134, 107, 107), rgb(17, 74, 107), black);
         
        
         }
@@ -66,7 +66,7 @@
             transition:  transform 2s ease-in-out, box-shadow 1s ease, border-radius 0.5s ease;
         
              
-             background-color: goldenrod;
+             background-color: snow;
              
           
         }
@@ -75,7 +75,7 @@
     border-radius: 4%;
     background-color: aliceblue;
    transform: scale(1.05);
-    box-shadow: 0 8px 15px black;
+    box-shadow: 0 8px 15px rgba(255, 250, 250, 0.692);
    
    }
 
@@ -102,7 +102,7 @@
   
         .Adiv {
           width: 100%;
-          background-color: rgb(7, 172, 117);
+          background-color: brown;
           font-family: Roboto;
         
         color: white;
@@ -122,26 +122,34 @@
 
         
 
-        @media only screen and (max-height: 680px) { 
+         
+    
+       
+
+      
+            
+   
+
+     @media only screen and (max-height: 680px) { 
+
+      #Container div img{
+            width: 100%;
+            height: 45vh;
+        
+        }
+     }
+
+
+
+     
+     
+     @media only screen and (max-height: 580px) { 
 
 #Container div img{
       width: 100%;
-      height: 45vh;
-  
+      height: 50vh;
+
   }
-}
-
-
-
-
-
-@media only screen and (max-height: 580px) { 
-
-#Container div img{
-width: 100%;
-height: 50vh;
-
-}
 
 }
 
@@ -149,10 +157,10 @@ height: 50vh;
 @media only screen and (max-height: 400px) { 
 
 #Container div img{
-width: 100%;
-height: 60vh;
-
-}
+      width: 100%;
+      height: 60vh;
+      
+  }
 
 
 }
@@ -160,32 +168,32 @@ height: 60vh;
 @media only screen and (min-width: 800px) { 
 
 #Container div img{
-width: 100%;
-height: 40vh;
-
-
-}
-.imageDiv {
-    width: 100%;
-    
-}
-}
-
-
-
-  @media only screen and (max-width: 300px) {
-
-
-
-#Container {
       width: 100%;
-   display: grid;
-   grid-template-columns: 1fr;    
-   grid-template-rows: 1fr;
-   justify-items: center;
-  grid-gap: 20px;
+      height: 40vh;
+     
   
   }
+  .imageDiv {
+          width: 100%;
+          
+}
+}
+
+
+
+        @media only screen and (max-width: 300px) {
+
+ 
+
+  #Container {
+            width: 100%;
+         display: grid;
+         grid-template-columns: 1fr;    
+         grid-template-rows: 1fr;
+         justify-items: center;
+        grid-gap: 20px;
+        
+        }
 
 
 
@@ -193,116 +201,116 @@ height: 40vh;
 
 
 @media only screen and (max-width: 500px) {
+ 
+ 
 
+  #Container {
+            width: 50%;
+         display: grid;
+         grid-template-columns: 1fr;    
+         grid-template-rows: 1fr;
+         justify-items: center;
+        grid-gap: 20px;
+        
+        }
 
-
-#Container {
-      width: 50%;
-   display: grid;
-   grid-template-columns: 1fr;    
-   grid-template-rows: 1fr;
-   justify-items: center;
-  grid-gap: 20px;
-  
-  }
-
-  #Intro p {
+        #Intro p {
 font-size: large;
-}
+    }
 
 
-#Exp {
-width: 100%;
-font-size: small;
-color: snow;
-display: flex;
-justify-content: center;
-align-items: center;
-font-family: sans-serif;
-font-weight: bold;
-}
+    #Exp {
+    width: 100%;
+    font-size: small;
+    color: snow;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-family: sans-serif;
+ font-weight: bold;
+   }
 
-#Exp li {
-font-size: small;
-}
+   #Exp li {
+    font-size: small;
+   }
 
 
 
 }
 
 @media only screen and (max-width: 1000px) {
-body {
+  body {
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  }
 
-width: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;  
-}
+  #Container { 
+    width: 100%;
+  }
 
-#Container { 
-width: 100%;
-}
-
-#Intro p {
+  #Intro p {
 font-size: x-large;
-}
+    }
 
-#Exp {
-width: 80%;
-font-size: large;
-color: snow;
-display: flex;
-justify-content: center;
-align-items: center;
-font-family: sans-serif;
-font-weight: bold;
-}
+    #Exp {
+    width: 80%;
+    font-size: large;
+    color: snow;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-family: sans-serif;
+ font-weight: bold;
+   }
 
 
-
+ 
 }
 
 
 @media only screen and (min-width: 1000px) {
 
-body {
+    body {
+   
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+ justify-content: center;
+ align-items: center;  
+ }
 
-width: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;  
-}
+ #Container { 
+   width: 85%;
+ }
 
-#Container { 
-width: 85%;
-}
+ Adiv strong {
+   font-size: x-large;
+ }
 
-Adiv strong {
-font-size: x-large;
-}
+ #Container div img{
+            width: 100%;
+            height: 50vh;
+        }
 
-#Container div img{
-      width: 100%;
-      height: 50vh;
-  }
-
-#Intro p {
+    #Intro p {
 font-size: xx-large;
-}
+    }
 
 
-#Exp {
-width: 50%;
-font-size: xx-large;
-color: snow;
-display: flex;
-justify-content: center;
-align-items: center;
-font-family: sans-serif;
-font-weight: bold;
-}
+    #Exp {
+    width: 50%;
+    font-size: xx-large;
+    color: snow;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-family: sans-serif;
+ font-weight: bold;
+   }
 
 
 }
@@ -322,98 +330,101 @@ width: 65%;
 }
 
 button {
-
-font-size: x-large;
-padding: 1%;
-font-weight: bold;
-
-border-radius: 4%;
-margin-top: 1%;
-background-color:  black
-;
+ 
+  font-size: x-large;
+  padding: 1%;
+  font-weight: bold;
+   
+  border-radius: 4%;
+  margin-top: 1%;
+  background-color:  black
+  ;
 
 }
 
 button a {
-color: crimson;
-font-family: sans-serif;
-text-decoration: none;
+  color: crimson;
+  font-family: sans-serif;
+  text-decoration: none;
 }
 
 
 
 .fi {
-font-size: xx-large;
-text-decoration: underline black;
-
+  font-size: xx-large;
+  text-decoration: underline crimson;
+  
 }
 
 
 .size:hover button {
-background-color: rgb(129, 12, 35);
+    background-color: rgb(129, 12, 35);
 
 
-}
+   }
 
 
-
+   
 .size:hover button a{
-color: white;
-text-decoration: underline gold;
+ color: white;
+ text-decoration: underline gold;
+    
+
+   }
 
 
-}
+  
+
+   #Exp {
 
 
-#Exp {
+    color: snow;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-family: sans-serif;
+   }
+
+   #Exp p {
+   
+    padding-top: 1%;
+    padding-bottom: 1%;
+   text-shadow: 1px 1px black;
+   border-top: 2px solid grey;
+   border-bottom: 2px solid grey;
+   border-right: 2px solid grey;
 
 
-color: snow;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-font-family: sans-serif;
-}
-
-#Exp p {
-
-padding-top: 1%;
-padding-bottom: 1%;
-text-shadow: 1px 1px black;
-border-top: 3px solid black;
-border-bottom: 3px solid black;
-border-right: 3px solid black;
-font-family: monospace;
-color: goldenrod;
-
-}
+   }
 
 #Exp ol {
-width: 80%;
-border-left: 2px solid crimson;
-border-bottom: 2px solid crimson;
-border-right: 2px solid crimson;
-
+  width: 80%;
+  border-left: 2px solid goldenrod;
+   border-bottom: 2px solid goldenrod;
+   border-right: 2px solid goldenrod;
+ 
 }
 
 li {
-padding: 1%;
+  padding: 1%;
 }
-
+ 
 
 h3 {
-text-decoration: underline crimson;
+  text-decoration: underline crimson;
 }
 
 
 
-@media only screen and (max-height: 680px) { 
+        
+        
+     @media only screen and (max-height: 680px) { 
 
 #Container div img{
       width: 100%;
       height: 45vh;
-      border: 3px solid orange;
+   
   }
 }
 
@@ -423,7 +434,7 @@ text-decoration: underline crimson;
 #Container div img{
 width: 100%;
 height: 50vh;
-border: 3px solid orange;
+
 }
 
 }
@@ -436,116 +447,196 @@ border: 3px solid orange;
 #Container div img{
 width: 100%;
 height: 60vh;
-border: 3px solid orange;
-}
-
 
 }
 
 
+}
+      
+
+   
     </style>
 </head>
 <body>
   
     <div id="Intro">
-        <h1> Fashion-deals</h1>
+        <h1>Online-Jobs</h1>
 
-        <p>Get exclusive discounts on your favorite fashion brands  <br>
-          With 
-          <strong class="fi">   Tolu's Ad'd </strong class="a">
+        <p>Explore the best online jobs 
+           for earning extra income from the comfort of
+          your home, With  <br>
+       <strong class="fi">   Tolu's Ad's </strong class="a">
         </p>
+        
     </div>
 
-    
-    <div id="Exp">
-      <p> Discover the Best Fashion Deals Online!
 
-        Upgrade your wardrobe without breaking the bank with amazing fashion deals from
-         top brands and online stores. 
-         Whether you're looking for trendy outfits, stylish footwear, 
-         or premium accessories, you can find exclusive discounts.
-          Stay ahead of the trends and refresh your style by taking advantage of these
-          fashion deals today!  </p>
+    <div id="Exp">
+      <p>  Explore the best online jobs to earn extra income from the comfort of your home.whether 
+        you're freelancing on Tolu's Ad's, completing survey forms for $15 or explorin other opportunities,
+        we've got you covered.  Start your journey to financial freedom today!
+      </p>
 
  
-  
+        <ol>
+
+          <h3>
+            Why Choose us?    </h3>
+           
+          <li>No Upfront Costs- Start Earning Today</li>
+     
+
+        
+          <li>Flexible Jobs That Fit Your Schedule</li>
+
+          <li>Jobs that  are from  relaible site</li>
+
+          <li>Jobs that refresh every week</li>
+        </ol>
         
   
     </div>
 
     <div id="Container">
 
-      <div class="size">
-   
-      <div class="imageDiv"> <img src="Fashion Img/miniSkirt.jpg" alt="">
-       </div>
-   
-      <div class="Adiv"><strong class="a">Mini-skirt Sales 33% off</strong></p></div>
-<button>
-  <a href="">Shop Now</a>
-</button>
-      </div>
-   
-      <div class="size">
-   
-       <div class="imageDiv"> <img src="Fashion Img/newS.jpg" alt="">
-        </div>
+   <div class="size">
+
+   <div class="imageDiv"> <img src="Online Img/SurveyF.svg" alt="">
+    </div>
+
+   <div class="Adiv"><strong class="a">Survey-Forms 15 USD</strong></p></div>
+  <button>
+    <a href="">Apply Now!</a></button> 
+  </div>
+
+   <div class="size">
+
+    <div class="imageDiv"> <img src="Online Img/apptest.svg" alt="">
+     </div>
+ 
+    <div class="Adiv"><strong class="a">App-testing 10 USD</strong></p></div>
+      <button>
+        <a href="">Apply Now!</a></button> 
+    </div>
+
     
-       <div class="Adiv"><strong class="a">Algazi Men's 30% off</strong></p></div>
-       <button>
-        <a  href="">Shop Now</a>
-      </button>
+    <div class="size">
+
+        <div class="imageDiv"> <img src="Online Img/webD.svg" alt="">
+         </div>
+     
+        <div class="Adiv"><strong class="a">Web-designer 200 USD</strong></p></div>
+        <button>
+          <a href="">Apply Now!</a></button>  
       </div>
-   
-       
-       <div class="size">
-   
-           <div class="imageDiv"> <img src="Fashion Img/ashion.jpg" alt="">
-            </div>
-        
-           <div class="Adiv"><strong class="a">Ashion Martin 49% off</strong></p></div>
+     
+        <div class="size">
+
+            <div class="imageDiv"> <img src="Online Img/FullS.svg" alt="">
+             </div>
+         
+            <div class="Adiv"><strong class="a">Full-stack Dev 300 USD</strong></p></div>
             <button>
-              <a  href="">Shop Now</a>
-            </button>
+               <a  href="">  
+              Apply Now!</a></button>  
+           
           </div>
-        
-           <div class="size">
-   
-               <div class="imageDiv"> <img src="Fashion Img/danami.jpg" alt="">
-                </div>
-            
-               <div class="Adiv"><strong class="a">Danami Women 9,900 naira</strong></p></div>
-               <button>
-                <a  href="">Shop Now</a>
-              </button> 
+         
+            <div class="size">
+
+                <div class="imageDiv"> <img src="Online Img/Junior.svg" alt="">
+                 </div>
+             
+                <div class="Adiv"><strong class="a">Junior-frontend Dev 150 USD</strong></p></div>
+                <button>
+                  
+                  <a href="">
+                  Apply Now!</a></button>    
               </div>
+             
+                <div class="size">
 
-            
-               <div class="size">
-   
-                   <div class="imageDiv"> <img src="Fashion Img/danamiT.jpg" alt="">
-                    </div>
-                
-                   <div class="Adiv"><strong class="a">Danami Tie & Dies 9,999 naira</strong></p></div>
-                   <button>
-                    <a  href="">Shop Now</a>
-                  </button> 
+                    <div class="imageDiv"> <img src="Online Img/Graphics.svg" alt="">
+                     </div>
+                 
+                    <div class="Adiv"><strong class="a">Graphic-Designer 100 USD</strong></p></div>
+                    <button>
+                      <a href="">
+                      Apply Now!</a></button>   
                   </div>
-                
 
-                   <div class="size">
-   
-                       <div class="imageDiv"> <img src="Fashion Img/kingKartel.jpg" alt="">
-                        </div>
-                    
-                       <div class="Adiv"><strong class="a">Kings-Kartel Combo 23% Off</strong></p></div>
-                        <button>
-                          <a  href="">Shop Now</a>
-                        </button> 
+                  
+                  <div class="size">
+
+                    <div class="imageDiv"> <img src="Online Img/SurveyF.svg" alt="">
+                     </div>
+                 
+                    <div class="Adiv"><strong class="a">Logo maker</strong></p></div>
+                   <button>
+                     <a href="">Apply Now!</a></button> 
+                   </div>
+                 
+                    <div class="size">
+                 
+                     <div class="imageDiv"> <img src="Online Img/apptest.svg" alt="">
                       </div>
-                    
-       </div>
-       
+                  
+                     <div class="Adiv"><strong class="a">Landing page Developer</strong></p></div>
+                       <button>
+                         <a href="">Apply Now!</a></button> 
+                     </div>
+                 
+                     
+                     <div class="size">
+                 
+                         <div class="imageDiv"> <img src="Online Img/webD.svg" alt="">
+                          </div>
+                      
+                         <div class="Adiv"><strong class="a">Game Developer</strong></p></div>
+                         <button>
+                           <a href="">Apply Now!</a></button>  
+                       </div>
+                      
+                         <div class="size">
+                 
+                             <div class="imageDiv"> <img src="Online Img/FullS.svg" alt="">
+                              </div>
+                          
+                             <div class="Adiv"><strong class="a">Mobile app Maintenance</strong></p></div>
+                             <button>
+                                <a  href="">  
+                               Apply Now!</a></button>  
+                            
+                           </div>
+                          
+                             <div class="size">
+                 
+                                 <div class="imageDiv"> <img src="Online Img/Junior.svg" alt="">
+                                  </div>
+                              
+                                 <div class="Adiv"><strong class="a">AI artist</strong></p></div>
+                                 <button>
+                                   
+                                   <a href="">
+                                   Apply Now!</a></button>    
+                               </div>
+                              
+                                 <div class="size">
+                 
+                                     <div class="imageDiv"> <img src="Online Img/Graphics.svg" alt="">
+                                      </div>
+                                  
+                                     <div class="Adiv"><strong class="a">Image editor</strong></p></div>
+                                     <button>
+                                       <a href="">
+                                       Apply Now!</a></button>   
+                                   </div>
+                 
+                                   
+                  
+
+                  
+    </div>
     
 </body>
 </html>

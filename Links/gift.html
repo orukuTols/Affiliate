@@ -5,259 +5,445 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gifts</title>
     <style>
-        body {
-           background-color: rgb(149, 118, 77);
-            width: 100%;
-            margin: 0;
-       
-        }
-
-        h1 {
-            color: white;
-            background-color: crimson;
-          
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        #Intro {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-           background-image: linear-gradient(90deg, rgb(134, 107, 107), rgb(17, 74, 107), black);
-            position: sticky;
-            top: 0;
-       
-        }
-
-        #Intro p {
-          font-size: large;
-          font-family: monospace;
-          font-weight: bold;
-          color: white;
-          text-align: center;
-        }
-
-        #Container {
-            width: 100%;
-         display: grid;
-         grid-template-columns: 1fr 1fr;    
-         grid-template-rows: 1fr;
-         justify-items: center;
-        grid-gap: 20px;
-        
-        }
-
-  
-       
-        
-        #Container .size {
-            width: 90%;
-        }
-
-        .size {
-            display: flex;
-            flex-direction: column;
-          
-        }
-
-        .size div {
+      body {
+               background-color: darkblue;
+                width: 100%;
+                margin: 0;
            
-       
-          
-      
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-          
-        }
-
-        .imageDiv {
-          width: 100%;
-          background-color: black;
-        }
-   
-        .Adiv {
-          width: 100%;
-          background-color: grey;
-
-        }
-
-     
-        #Container div img{
-            width: 100%;
-            height: 40vh;
-            border: 3px solid black;
-        }
-
-         
+            }
+    
+            h1 {
+                color: white;
+                background-color: green;
+              
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    
+            #Intro {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+               background-image: linear-gradient(90deg, rgb(134, 107, 107), rgb(160, 117, 9), black);
+            
+           
+            }
+    
+            #Intro p {
+              font-size: large;
+              font-family: monospace;
+              font-weight: bold;
+              color: white;
+              text-align: center;
+            }
+    
+            #Container {
+                width: 100%;
+             display: grid;
+             grid-template-columns: 1fr 1fr;    
+             grid-template-rows: 1fr;
+             justify-items: center;
+            grid-column-gap: 20px;
+            grid-row-gap: 35px;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            
+            }
     
       
-        a {
-          font-family: sans-serif;
-        
-          color: white;
-            text-decoration:  underline red;
-           font-size: large;
-           font-weight: bold;
-           font-family: Arial, Helvetica, sans-serif;
-        
+           
             
-        }
-
-      
+            #Container .size {
+                width: 90%;
+            }
+    
+            .size {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition:  transform 2s ease-in-out, box-shadow 1s ease, border-radius 0.5s ease;
             
+                 
+                 background-color: goldenrod;
+                 
+              
+            }
+    
+       .size:hover {
+        border-radius: 4%;
+        background-color: aliceblue;
+       transform: scale(1.05);
+        box-shadow: 0 8px 15px black;
+       
+       }
+    
+     
+            .size div {
+               
+           
+              
           
-     a:hover {
-      color: red;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+              
+            }
+    
+            .imageDiv {
+              width: 100%;
+              background-image:  linear-gradient(grey, black);
+            
+    }
+    
       
-      text-decoration:  underline black;
-     }
-     
-
-     @media only screen and (max-height: 680px) { 
-
-      #Container div img{
-            width: 100%;
-            height: 45vh;
-            border: 3px solid orange;
-        }
-     }
-
-     
-     @media only screen and (max-height: 580px) { 
-
-#Container div img{
-      width: 100%;
-      height: 50vh;
-      border: 3px solid orange;
-  }
-
-}
-
-
-
-
-@media only screen and (max-height: 400px) { 
-
-#Container div img{
-      width: 100%;
-      height: 60vh;
-      border: 3px solid orange;
-  }
-
-
-}
-
-
-
-        @media only screen and (max-width: 300px) {
-  body {
-    background-color: lightblue;
-  }
- 
-
-  #Container {
-            width: 100%;
-         display: grid;
-         grid-template-columns: 1fr;    
-         grid-template-rows: 1fr;
-         justify-items: center;
-        grid-gap: 20px;
+            .Adiv {
+              width: 100%;
+              background-color: rgb(7, 172, 117);
+              font-family: Roboto;
+            
+            color: white;
+           
+             font-size: large;
+             font-weight: bold;
+             font-family: Arial, Helvetica, sans-serif;
+          
+            }
+    
+         
+            #Container div img{
+                width: 100%;
+                height: 40vh;
+    
+            }
+    
+            
+    
+            @media only screen and (max-height: 680px) { 
+    
+    #Container div img{
+          width: 100%;
+          height: 45vh;
+      
+      }
+    }
+    
+    
+    
+    
+    
+    @media only screen and (max-height: 580px) { 
+    
+    #Container div img{
+    width: 100%;
+    height: 50vh;
+    
+    }
+    
+    }
+    
+    
+    @media only screen and (max-height: 400px) { 
+    
+    #Container div img{
+    width: 100%;
+    height: 60vh;
+    
+    }
+    
+    
+    }
+    
+    @media only screen and (min-width: 800px) { 
+    
+    #Container div img{
+    width: 100%;
+    height: 40vh;
+    
+    
+    }
+    .imageDiv {
+        width: 100%;
         
-        }
-
-
-}
-
-
-@media only screen and (max-width: 500px) {
-  body {
-    background-color: lightblue;
-  }
- 
-
-  #Container {
-            width: 50%;
-         display: grid;
-         grid-template-columns: 1fr;    
-         grid-template-rows: 1fr;
-         justify-items: center;
-        grid-gap: 20px;
-        
-        }
-
-
-
-}
-
-@media only screen and (max-width: 1000px) {
-  body {
-   
+    }
+    }
+    
+    
+    
+      @media only screen and (max-width: 300px) {
+    
+    
+    
+    #Container {
+          width: 100%;
+       display: grid;
+       grid-template-columns: 1fr;    
+       grid-template-rows: 1fr;
+       justify-items: center;
+      grid-gap: 20px;
+      
+      }
+    
+    
+    
+    }
+    
+    
+    @media only screen and (max-width: 500px) {
+    
+    
+    
+    #Container {
+          width: 50%;
+       display: grid;
+       grid-template-columns: 1fr;    
+       grid-template-rows: 1fr;
+       justify-items: center;
+      grid-gap: 20px;
+      
+      }
+    
+      #Intro p {
+    font-size: large;
+    }
+    
+    
+    #Exp {
+    width: 100%;
+    font-size: small;
+    color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    }
+    
+    #Exp li {
+    font-size: small;
+    }
+    
+    
+    
+    }
+    
+    @media only screen and (max-width: 1000px) {
+    body {
+    
     width: 100%;
     display: flex;
     flex-direction: column;
-  justify-content: center;
-  align-items: center;  
-  }
-
-  #Container { 
-    width: 100%;
-  }
-
-}
-
-
-@media only screen and (min-width: 1000px) {
-
-body {
-
-width: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;  
-}
-
-#Container { 
-width: 85%;
-}
-
-a {
-font-size: x-large;
-}
-
-#Container div img{
-        width: 100%;
-        height: 50vh;
+    justify-content: center;
+    align-items: center;  
     }
-
-}
-
-@media only screen and (min-width: 1500px) {
-
-
-
-#Container { 
-width: 65%;
-}
-
-
-
-
-
-}
-
-
-
-        
-      
-
-   
-    </style>
+    
+    #Container { 
+    width: 100%;
+    }
+    
+    #Intro p {
+    font-size: x-large;
+    }
+    
+    #Exp {
+    width: 80%;
+    font-size: large;
+    color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    }
+    
+    
+    
+    }
+    
+    
+    @media only screen and (min-width: 1000px) {
+    
+    body {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    }
+    
+    #Container { 
+    width: 85%;
+    }
+    
+    Adiv strong {
+    font-size: x-large;
+    }
+    
+    #Container div img{
+          width: 100%;
+          height: 50vh;
+      }
+    
+    #Intro p {
+    font-size: xx-large;
+    }
+    
+    
+    #Exp {
+    width: 50%;
+    font-size: xx-large;
+    color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    }
+    
+    
+    }
+    
+    @media only screen and (min-width: 1500px) {
+    
+    
+    
+    #Container { 
+    width: 65%;
+    }
+    
+    
+    
+    
+    
+    }
+    
+    button {
+    
+    font-size: x-large;
+    padding: 1%;
+    font-weight: bold;
+    
+    border-radius: 4%;
+    margin-top: 1%;
+    background-color:  black
+    ;
+    
+    }
+    
+    button a {
+    color: crimson;
+    font-family: sans-serif;
+    text-decoration: none;
+    }
+    
+    
+    
+    .fi {
+    font-size: xx-large;
+    text-decoration: underline black;
+    
+    }
+    
+    
+    .size:hover button {
+    background-color: rgb(129, 12, 35);
+    
+    
+    }
+    
+    
+    
+    .size:hover button a{
+    color: white;
+    text-decoration: underline gold;
+    
+    
+    }
+    
+    
+    #Exp {
+    
+    
+    color: snow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    }
+    
+    #Exp p {
+    
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-shadow: 1px 1px black;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    font-family: monospace;
+    color: goldenrod;
+    
+    }
+    
+    #Exp ol {
+    width: 80%;
+    border-left: 2px solid crimson;
+    border-bottom: 2px solid crimson;
+    border-right: 2px solid crimson;
+    
+    }
+    
+    li {
+    padding: 1%;
+    }
+    
+    
+    h3 {
+    text-decoration: underline crimson;
+    }
+    
+    
+    
+    @media only screen and (max-height: 680px) { 
+    
+    #Container div img{
+          width: 100%;
+          height: 45vh;
+          border: 3px solid orange;
+      }
+    }
+    
+    
+    @media only screen and (max-height: 580px) { 
+    
+    #Container div img{
+    width: 100%;
+    height: 50vh;
+    border: 3px solid orange;
+    }
+    
+    }
+    
+    
+    
+    
+    @media only screen and (max-height: 400px) { 
+    
+    #Container div img{
+    width: 100%;
+    height: 60vh;
+    border: 3px solid orange;
+    }
+    
+    
+    }
+    
+    
+        </style>
 </head>
 <body>
     <div id="Intro">

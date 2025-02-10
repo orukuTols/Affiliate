@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot-Deals</title>
     <style>
-        body {
-           background-color: rgb(149, 118, 77);
+      body {
+           background-color: rgb(62, 10, 114);
             width: 100%;
             margin: 0;
        
         }
 
         h1 {
-            color: white;
-            background-color: crimson;
-          
-            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            background-color: black;
+            border: 5px solid white;
+          padding-top: 0.5%;
+        padding-bottom: 0.5%;
+           font-family: Arial, Helvetica, sans-serif;
         }
 
         #Intro {
@@ -25,9 +27,8 @@
             width: 100%;
             justify-content: center;
             align-items: center;
-           background-image: linear-gradient(90deg, rgb(134, 107, 107), rgb(17, 74, 107), black);
-            position: sticky;
-            top: 0;
+           background-image: linear-gradient(90deg, crimson, orange, black);
+        
        
         }
 
@@ -36,6 +37,7 @@
           font-family: monospace;
           font-weight: bold;
           color: white;
+          text-shadow: 1px 1px black;
           text-align: center;
         }
 
@@ -45,7 +47,10 @@
          grid-template-columns: 1fr 1fr;    
          grid-template-rows: 1fr;
          justify-items: center;
-        grid-gap: 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 35px;
+        padding-top: 2%;
+        padding-bottom: 2%;
         
         }
 
@@ -59,9 +64,25 @@
         .size {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition:  transform 2s ease-in-out, box-shadow 1s ease, border-radius 0.5s ease;
+        
+             
+             background-color: darkcyan;
+             
           
         }
 
+   .size:hover {
+    border-radius: 4%;
+    background-color: aliceblue;
+   transform: scale(1.05);
+    box-shadow: 0 8px 15px black;
+   
+   }
+
+ 
         .size div {
            
        
@@ -77,147 +98,171 @@
 
         .imageDiv {
           width: 100%;
-          background-color: black;
-        }
-   
+          background-image:  linear-gradient(grey, black);
+        
+}
+
+  
         .Adiv {
           width: 100%;
-          background-color: whitesmoke;
-
+          background-color: red;
+          font-family: Roboto;
+        
+        color: black;
+       
+         font-size: large;
+         font-weight: bold;
+         font-family: Arial, Helvetica, sans-serif;
+      
         }
 
      
         #Container div img{
             width: 100%;
             height: 40vh;
-            border: 3px solid black;
+
         }
 
-         
-    
-      
-        a {
-          font-family: sans-serif;
         
-          color: black;
-            text-decoration:  underline blue;
-           font-size: large;
-           font-weight: bold;
-           font-family: Arial, Helvetica, sans-serif;
-        
-            
-        }
 
-      
-            
-          
-     a:hover {
-      color: red;
-      
-      text-decoration:  underline black;
-     }
-     
-
-     @media only screen and (max-height: 680px) { 
-
-      #Container div img{
-            width: 100%;
-            height: 45vh;
-            border: 3px solid orange;
-        }
-     }
-
-     
-     @media only screen and (max-height: 580px) { 
+        @media only screen and (max-height: 680px) { 
 
 #Container div img{
       width: 100%;
-      height: 50vh;
-      border: 3px solid orange;
+      height: 45vh;
+  
   }
+}
+
+
+
+
+
+@media only screen and (max-height: 580px) { 
+
+#Container div img{
+width: 100%;
+height: 50vh;
 
 }
 
+}
+
+
+@media only screen and (max-height: 400px) { 
+
+#Container div img{
+width: 100%;
+height: 60vh;
+
+}
+
+
+}
 
 @media only screen and (min-width: 800px) { 
 
 #Container div img{
+width: 100%;
+height: 40vh;
+
+
+}
+.imageDiv {
+    width: 100%;
+    
+}
+}
+
+
+
+  @media only screen and (max-width: 300px) {
+
+
+
+#Container {
       width: 100%;
-      height: 60vh;
-     
+   display: grid;
+   grid-template-columns: 1fr;    
+   grid-template-rows: 1fr;
+   justify-items: center;
+  grid-gap: 20px;
   
   }
-  .imageDiv {
-          width: 100%;
-          background-color: grey;
-}
-}
-@media only screen and (max-height: 400px) { 
 
-#Container div img{
-      width: 100%;
-      height: 60vh;
-      border: 3px solid orange;
+
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+
+
+#Container {
+      width: 50%;
+   display: grid;
+   grid-template-columns: 1fr;    
+   grid-template-rows: 1fr;
+   justify-items: center;
+  grid-gap: 20px;
+  
   }
 
-
+  #Intro p {
+font-size: large;
 }
 
 
-
-        @media only screen and (max-width: 300px) {
-  body {
-    background-color: lightblue;
-  }
- 
-
-  #Container {
-            width: 100%;
-         display: grid;
-         grid-template-columns: 1fr;    
-         grid-template-rows: 1fr;
-         justify-items: center;
-        grid-gap: 20px;
-        
-        }
-
-
+#Exp {
+width: 100%;
+font-size: small;
+color: snow;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: sans-serif;
+font-weight: bold;
 }
 
-
-@media only screen and (max-width: 630px) {
-  body {
-    background-color: lightblue;
-  }
- 
-
-  #Container {
-            width: 50%;
-         display: grid;
-         grid-template-columns: 1fr;    
-         grid-template-rows: 1fr;
-         justify-items: center;
-        grid-gap: 20px;
-        
-        }
+#Exp li {
+font-size: small;
+}
 
 
 
 }
 
 @media only screen and (max-width: 1000px) {
-  body {
-   
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  justify-content: center;
-  align-items: center;  
-  }
+body {
 
-  #Container { 
-    width: 100%;
-  }
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+
+#Container { 
+width: 100%;
+}
+
+#Intro p {
+font-size: x-large;
+}
+
+#Exp {
+width: 80%;
+font-size: large;
+color: snow;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: sans-serif;
+font-weight: bold;
+}
+
+
 
 }
 
@@ -237,14 +282,31 @@ align-items: center;
 width: 85%;
 }
 
-a {
+Adiv strong {
 font-size: x-large;
 }
 
 #Container div img{
-        width: 100%;
-        height: 50vh;
-    }
+      width: 100%;
+      height: 50vh;
+  }
+
+#Intro p {
+font-size: xx-large;
+}
+
+
+#Exp {
+width: 50%;
+font-size: xx-large;
+color: snow;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: sans-serif;
+font-weight: bold;
+}
+
 
 }
 
@@ -258,6 +320,135 @@ width: 65%;
 
 
 
+
+
+}
+
+button {
+
+font-size: x-large;
+padding: 1%;
+font-weight: bold;
+
+border-radius: 4%;
+margin-top: 1%;
+background-color:  white
+;
+
+}
+
+button a {
+color: blue;
+font-family: sans-serif;
+text-decoration: none;
+}
+
+
+
+.fi {
+font-size: xx-large;
+text-decoration: underline black;
+
+}
+
+
+.size:hover button {
+background-color: rgb(129, 12, 35);
+
+
+}
+
+
+
+.size:hover button a{
+color: white;
+text-decoration: underline gold;
+
+
+}
+
+.size:hover .a{
+color: white;
+text-shadow: 1px 1px black;
+
+
+
+}
+
+
+#Exp {
+
+
+color: snow;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: sans-serif;
+}
+
+#Exp p {
+
+padding-top: 1%;
+padding-bottom: 1%;
+text-shadow: 1px 1px black;
+border-top: 3px solid whitesmoke;
+border-bottom: 3px solid whitesmoke;
+border-right: 3px solid whitesmoke;
+font-family: monospace;
+color: goldenrod;
+
+}
+
+#Exp ol {
+width: 80%;
+border-left: 2px solid crimson;
+border-bottom: 2px solid crimson;
+border-right: 2px solid crimson;
+
+}
+
+li {
+padding: 1%;
+}
+
+
+h3 {
+text-decoration: underline crimson;
+}
+
+
+
+@media only screen and (max-height: 680px) { 
+
+#Container div img{
+      width: 100%;
+      height: 45vh;
+    
+  }
+}
+
+
+@media only screen and (max-height: 580px) { 
+
+#Container div img{
+width: 100%;
+height: 50vh;
+
+}
+
+}
+
+
+
+
+@media only screen and (max-height: 400px) { 
+
+#Container div img{
+width: 100%;
+height: 60vh;
+
+}
 
 
 }
@@ -278,6 +469,18 @@ width: 65%;
             <br>with Tolu Ad's
         </p>
     </div>
+
+    
+    <div id="Exp">
+      <p> 
+        *🔥 Hot Deals You Can’t Miss! 🔥*  
+        Looking for unbeatable discounts on the hottest products? 
+        You’ve come to the right place! At *Tolu's Ad's*, we bring you exclusive, 
+        limited-time offers on everything from fashion and gadgets to online jobs and more. 
+        Don’t wait—these deals are sizzling Hot
+
+        </p>
+</div>
     <div id="Container">
 
       <div class="size">
@@ -285,7 +488,12 @@ width: 65%;
       <div class="imageDiv"> <img src="Hot Img/iphoneE.jpg" alt="">
        </div>
    
-      <div class="Adiv"><strong><a href="https://www.jumia.com.ng/apple-iphone-11-pro-5.8-256gb-rom-4gb-ram-4g-lte-single-sim-esim.-367935012.html">24% Discount on Iphone 11 Pro</a></strong></p></div>
+      <div class="Adiv"><strong class="a">24% Discount on Iphone 11 Pro</a></strong></p></div>
+      <button>
+       <a href="">
+          Apply now
+        </a>
+      </button>
       </div>
    
       <div class="size">
@@ -293,8 +501,13 @@ width: 65%;
        <div class="imageDiv"> <img src="Hot Img/redmi.webp" alt="">
         </div>
     
-       <div class="Adiv"><strong><a href="https://www.jumia.com.ng/xiaomi-redmi-14c-6.88-8gb-ram256gb-rom-android-12-midnight-black-373379432.html">Xiomi Redimi 14C 41% off</a></strong></p></div>
-       </div>
+       <div class="Adiv"><strong class="a">Xiomi Redimi 14C 41% off</strong></p></div>
+       
+      <button>
+        <a href="">
+          Apply now
+        </a>
+      </button></div>
    
        
        <div class="size">
@@ -302,32 +515,52 @@ width: 65%;
            <div class="imageDiv"> <img src="Hot Img/macbook.jpg">
             </div>
         
-           <div class="Adiv"><strong><a href="https://www.jumia.com.ng/renewed-macbook-pro-laptop-a1278-13.3-inch-core-i5-2.5ghz-8gb-ram-500gb-enar-keyboard-387111554.html">Macbok Pro 65% off</a></strong></p></div>
-           </div>
+           <div class="Adiv"><strong class="a">Macbok Pro 65% off</strong></p></div>
+           
+          <button>
+            <a href="">
+              Apply now
+            </a>
+          </button></div>
         
            <div class="size">
    
                <div class="imageDiv"> <img src="Hot Img/blue.jpg">
                 </div>
             
-               <div class="Adiv"><strong><a href="https://www.jumia.com.ng/generic-wireless-fingerprint-touch-blutooth-headset-earphone-stereo-sound-in-ear-earbuds-234743274.html">Wireless-Earphone 55% off</a></strong></p></div>
-               </div>
+               <div class="Adiv"><strong class="a">Wireless-Earphone 55% off</strong></p></div>
+               
+              <button>
+                <a href="">
+                  Apply now
+                </a>
+              </button></div>
             
                <div class="size">
    
                    <div class="imageDiv"> <img src="Hot Img/casual.jpg">
                     </div>
                 
-                   <div class="Adiv"><strong><a href="https://www.jumia.com.ng/alagzi-mens-trendy-casual-sneakers-white-355443098.html">Algazi-Men's sneaker 47% off</a></strong></p></div>
-                   </div>
+                   <div class="Adiv"><strong class="a">Algazi-Men's sneaker 47% off</strong></p></div>
+                   
+                  <button>
+                    <a href="">
+                      Apply now
+                    </a>
+                  </button></div>
                 
                    <div class="size">
    
                        <div class="imageDiv"> <img src="Hot Img/power.jpg" alt="">
                         </div>
                     
-                       <div class="Adiv"><strong><a href="https://www.jumia.com.ng/itel-30000mah-type-c-output-fast-charging-power-bank-free-gift-223347431.html">Itel Power Bank 25% off</a></strong></p></div>
-                       </div>
+                       <div class="Adiv"><strong class="a">Itel Power Bank 25% off</strong></p></div>
+                       
+                      <button>
+                        <a href="">
+                          Apply now
+                        </a>
+                      </button></div>
                     
        </div>
     

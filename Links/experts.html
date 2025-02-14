@@ -117,9 +117,9 @@
         }
 
      
-        #Container div img{
+        #Container .size img{
             width: 100%;
-            height: 40vh;
+        
 
         }
 
@@ -131,47 +131,27 @@
 
       
             
-   
-
-     @media only screen and (max-height: 680px) { 
-
-      #Container div img{
-            width: 100%;
-            height: 45vh;
-        
-        }
-     }
 
 
 
-     
-     
-     @media only screen and (max-height: 580px) { 
 
-#Container div img{
-      width: 100%;
-      height: 50vh;
 
-  }
+
+
+@media only screen and (max-height: 680px) { 
+
+#Container .size img{
+
+height: 60vh;
 
 }
 
 
-@media only screen and (max-height: 400px) { 
-
-#Container div img{
-      width: 100%;
-      height: 60vh;
-      
-  }
-
-
 }
-
 @media only screen and (min-width: 800px) { 
 
 #Container div img{
-      width: 100%;
+     
       height: 40vh;
      
   
@@ -268,8 +248,12 @@ align-items: center;
 }
 
 #Container { 
-width: 90%;
+width: 100%;
 }
+
+.Adiv strong {
+        font-size: x-large;
+    }
 
 
 
@@ -311,9 +295,7 @@ width: 65%;
      
   }
 
-  .Adiv .a {
-    font-size: small;
-  }
+
 
   
 
@@ -450,39 +432,7 @@ h3 {
 
         
         
-     @media only screen and (max-height: 680px) { 
-
-#Container div img{
-      width: 100%;
-      height: 45vh;
-   
-  }
-}
-
-
-@media only screen and (max-height: 580px) { 
-
-#Container div img{
-width: 100%;
-height: 50vh;
-
-}
-
-}
-
-
-
-
-@media only screen and (max-height: 400px) { 
-
-#Container div img{
-width: 100%;
-height: 60vh;
-
-}
-
-
-}
+  
       
 
 
@@ -493,6 +443,24 @@ height: 60vh;
     text-decoration: underline dotted;
     font-family: 'Courier New', Courier, monospace;
 }
+
+.p:hover {
+  text-decoration: none;
+}
+.p:hover a {
+  color: purple;
+  text-decoration: underline;
+}
+.p  a {
+text-decoration: none;
+color: red;
+}
+
+.pa {
+  font-family: sans-serif;
+  color: orangered;
+}
+
 
 .some {
   width: 85%;
@@ -553,7 +521,26 @@ background-color: rgb(78, 13, 139);
   color: hotpink;
 } 
 
-   
+.wo {
+padding: 1%;
+background-color: burlywood;
+border-radius: 5%;
+}
+  .wo a {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: sans-serif
+  } 
+
+  .wo:hover {
+    
+    background-color: black;
+
+  }
+  .wo:hover a {
+    color: red;
+  }
     </style>
 </head>
 <body>
@@ -576,16 +563,18 @@ background-color: rgb(78, 13, 139);
 
     <div id="Exp">
       <p> Find experienced freelancers for any task—logos, websites, marketing, and more. Affordable rates, quick delivery!
-    <br>  <button><a href="">"Find a Freelancer Now"</a>  </button>
+     
+          <br>  <button class="wo" target="_blank"><a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%253A%252F%252Fwww.fiverr.com%252F%253Fsource%253Dtop_nav">Find a Freelancer Now</a>  </button>
       </p>
 
- 
+
       
 
 
 
-
-
+      <div class="some"> <h2 class="p">
+        Find The Expert You Want Right Now! on <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%253A%252F%252Fwww.fiverr.com%252F%253Fsource%253Dtop_nav">Fiverr</a></h2>
+        </div>
 
 
  
@@ -621,143 +610,87 @@ background-color: rgb(78, 13, 139);
   
     </div>
 
-    <div class="some"> <h2 class="p">
-    Find The Expert You Want Right Now!</h2>
+    <div class="some">
+
+    <h2 class="pa">These are some of the experts available for hiring:</h2>
   </div>
     <div id="Container">
 
-   <div class="size">
-
-   <div class="imageDiv"> <img src="Online Img/SurveyF.svg" alt="">
-    </div>
-
-   <div class="Adiv"><strong class="a">Survey-Forms 15 USD</strong></p></div>
-  <button>
-    <a href="">Hire an Expert Now</a></button> 
-  </div>
-
-   <div class="size">
-
-    <div class="imageDiv"> <img src="Online Img/apptest.svg" alt="">
-     </div>
- 
-    <div class="Adiv"><strong class="a">App-testing 10 USD</strong></p></div>
-      <button>
-        <a href="">Hire an Expert Now</a></button> 
-    </div>
+  
 
     
-    <div class="size">
 
-        <div class="imageDiv"> <img src="Online Img/webD.svg" alt="">
-         </div>
-     
-        <div class="Adiv"><strong class="a">Web-designer 200 USD</strong></p></div>
-        <button>
-          <a href="">Hire an Expert Now</a></button>  
-      </div>
-     
-        <div class="size">
-
-            <div class="imageDiv"> <img src="Online Img/FullS.svg" alt="">
-             </div>
-         
-            <div class="Adiv"><strong class="a">Full-stack Dev 300 USD</strong></p></div>
-            <button>
-               <a  href="">  
-              Hire an Expert Now</a></button>  
-           
-          </div>
-         
-            <div class="size">
-
-                <div class="imageDiv"> <img src="Online Img/Junior.svg" alt="">
-                 </div>
-             
-                <div class="Adiv"><strong class="a">Junior-frontend Dev 150 USD</strong></p></div>
-                <button>
-                  
-                  <a href="">
-                  Hire an Expert Now</a></button>    
-              </div>
+  
              
                 <div class="size">
 
-                    <div class="imageDiv"> <img src="Online Img/Graphics.svg" alt="">
+                    <div class="imageDiv"> <img src="Expert Img/gra.jpg" alt="">
                      </div>
                  
-                    <div class="Adiv"><strong class="a">Graphic-Designer 100 USD</strong></p></div>
+                    <div class="Adiv"><strong class="a">Graphic & Design</strong></p></div>
                     <button>
-                      <a href="">
+                      <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%253A%252F%252Fwww.fiverr.com%252Fcategories%252Fgraphics-design%253Fsource%253Dcategory_tree">
                       Hire an Expert Now</a></button>   
                   </div>
 
-                  
+                
                   <div class="size">
 
-                    <div class="imageDiv"> <img src="Online Img/SurveyF.svg" alt="">
+                    <div class="imageDiv"> <img src="Expert Img/pro.jpg" alt="">
                      </div>
                  
-                    <div class="Adiv"><strong class="a">Logo maker</strong></p></div>
+                    <div class="Adiv"><strong class="a">Programming and tech </strong></p></div>
                    <button>
-                     <a href="">Hire an Expert Now</a></button> 
+                     <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%253A%252F%252Fwww.fiverr.com%252Fcategories%252Fprogramming-tech%253Fsource%253Dcategory_tree">Hire an Expert Now</a></button> 
                    </div>
                  
                     <div class="size">
                  
-                     <div class="imageDiv"> <img src="Online Img/apptest.svg" alt="">
+                     <div class="imageDiv"> <img src="Expert Img/DigI.jpg" alt="">
                       </div>
                   
-                     <div class="Adiv"><strong class="a">Landing page Developer</strong></p></div>
+                     <div class="Adiv"><strong class="a">Digital Marketing</strong></p></div>
                        <button>
-                         <a href="">Hire an Expert Now</a></button> 
+                         <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%253A%252F%252Fwww.fiverr.com%252Fcategories%252Fonline-marketing%253Fsource%253Dcategory_tree">Hire an Expert Now</a></button> 
                      </div>
                  
                      
                      <div class="size">
                  
-                         <div class="imageDiv"> <img src="Online Img/webD.svg" alt="">
+                         <div class="imageDiv"> <img src="Expert Img/anim.jpg" alt="">
                           </div>
                       
-                         <div class="Adiv"><strong class="a">Game Developer</strong></p></div>
+                         <div class="Adiv"><strong class="a">Video & Animation</strong></p></div>
                          <button>
-                           <a href="">Hire an Expert Now</a></button>  
+                           <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%253A%252F%252Fwww.fiverr.com%252Fcategories%252Fvideo-animation%253Fsource%253Dcategory_tree">Hire an Expert Now</a></button>  
                        </div>
                       
                          <div class="size">
                  
-                             <div class="imageDiv"> <img src="Online Img/FullS.svg" alt="">
+                             <div class="imageDiv"> <img src="Expert Img/Wri.jpg" alt="">
                               </div>
                           
-                             <div class="Adiv"><strong class="a">Mobile app Maintenance</strong></p></div>
+                             <div class="Adiv"><strong class="a">Writing & Translations</strong></p></div>
                              <button>
-                                <a  href="">  
+                                <a  href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%253A%252F%252Fwww.fiverr.com%252Fcategories%252Fwriting-translation%253Fsource%253Dcategory_tree">
+                              
                                Hire an Expert Now</a></button>  
                             
                            </div>
                           
                              <div class="size">
                  
-                                 <div class="imageDiv"> <img src="Online Img/Junior.svg" alt="">
+                                 <div class="imageDiv"> <img src="Expert Img/aud.jpg" alt="">
                                   </div>
                               
-                                 <div class="Adiv"><strong class="a">AI artist</strong></p></div>
+                                 <div class="Adiv"><strong class="a">Music & Audio</strong></p></div>
                                  <button>
                                    
-                                   <a href="">
+                                   <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%253A%252F%252Fwww.fiverr.com%252Fcategories%252Fmusic-audio%253Fsource%253Dcategory_tree">
                                    Hire an Expert Now</a></button>    
                                </div>
                               
-                                 <div class="size">
-                 
-                                     <div class="imageDiv"> <img src="Online Img/Graphics.svg" alt="">
-                                      </div>
-                                  
-                                     <div class="Adiv"><strong class="a">Image editor</strong></p></div>
-                                     <button>
-                                       <a href="">
-                                       Hire an Expert Now</a></button>   
-                                   </div>
+                           
                  
                                    
                   

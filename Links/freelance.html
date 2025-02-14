@@ -68,7 +68,7 @@
             transition:  transform 2s ease-in-out, box-shadow 1s ease, border-radius 0.5s ease;
         
              
-             background-color: silver;
+             background-color: rgb(19, 17, 17);
              
           
         }
@@ -105,7 +105,7 @@
   
         .Adiv {
           width: 100%;
-          background-image: linear-gradient(grey,black);
+          background-color: gray;
           font-family: Roboto;
         
         color: white;
@@ -119,6 +119,7 @@
      
         #Container div img{
             width: 100%;
+            display: block;
            height: 45vh;
 
         }
@@ -133,39 +134,13 @@
             
    
 
-     @media only screen and (max-height: 680px) { 
-
-      #Container div img{
-            width: 100%;
-            height: 45vh;
-        
-        }
-     }
-
-
-
-     
-     
-     @media only screen and (max-height: 580px) { 
-
-#Container div img{
-      width: 100%;
-      height: 50vh;
-
-  }
-
-}
-
-
-@media only screen and (max-height: 400px) { 
+        @media only screen and (max-height: 700px) { 
 
 #Container div img{
       width: 100%;
       height: 60vh;
-      
+   
   }
-
-
 }
 
 
@@ -263,19 +238,13 @@ justify-content: center;
 align-items: center;  
 }
 
-#Container { 
-width: 90%;
+#Container div img{ 
+width: 100%;
 }
 
 .Adiv strong {
 font-size: x-large;
 }
-
-#Container div img{
-      width: 100%;
- 
-     
-  }
 
 #Intro p {
 font-size: xx-large;
@@ -304,46 +273,49 @@ font-weight: bold;
 width: 65%;
 }
 
+
 #Container div img{
       width: 100%;
       height: 60vh;
      
   }
+
 }
 
-  @media (min-height: 900px) and (min-width: 550px) and (max-width: 1000px)  {
+
+@media (min-height: 900px) and (min-width: 550px)  and (max-width: 1000px){
 
 
-    #Container {
-            width: 70%;
-         display: grid;
-         grid-template-columns: 1fr;    
-         grid-template-rows: 1fr;
-         justify-items: center;
-        grid-gap: 20px;
-        
-        }
-
-        #Container div img{
-      width: 100%;
-      height: 50vh;
-     
-  }
-
-
-  .size button a {
-    font-size: x-large;
+#Container {
+        width: 70%;
+     display: grid;
+     grid-template-columns: 1fr;    
+     grid-template-rows: 1fr;
+     justify-items: center;
+    grid-gap: 20px;
     
-  }
+    }
 
-  .size button {
-    padding: 1%;
-  }
+    #Container div img{
+  width: 100%;
+  height: 50vh;
+ 
+}
 
-  .Adiv strong {
-    font-size: x-large;
-    padding: 1%;
-  }
+
+.size button a {
+font-size: x-large;
+
+}
+
+.size button {
+padding: 1%;
+}
+
+.Adiv strong {
+font-size: x-large;
+padding: 1%;
+}
 }
 
 button {
@@ -453,47 +425,16 @@ h3 {
 
 
         
-        
-     @media only screen and (max-height: 680px) { 
+           
 
-#Container div img{
-      width: 100%;
-      height: 45vh;
-   
-  }
-}
-
-
-@media only screen and (max-height: 580px) { 
-
-#Container div img{
-width: 100%;
-height: 50vh;
-
-}
-
-}
-
-
-
-
-@media only screen and (max-height: 400px) { 
-
-#Container div img{
-width: 100%;
-height: 60vh;
-
-}
-
-
-}
-      
+    
 
 .p {
     
-    color: black;
+    color: white;
+    text-decoration: underline goldenrod;
     text-shadow: 0.3px 0.3px sienna;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: sans-serif;
 }
 
 .some {
@@ -569,7 +510,7 @@ padding: 0.5%;
         Start Freelancing on ? <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
           Fiverr</a>
       </p>
-
+ <p>  Fiverr boast an impressive 4 seconds per gig. which means that every 4 seconds a person is hired for work on fiverr</p>
  
         <ol>
 
@@ -604,59 +545,75 @@ padding: 0.5%;
    <div class="some"> <h2 class="p">These are some of the Freelance Jobs You Can Do on Fiverr: </h2> </div>
     <div id="Container">
      
-   <div class="size">
+      
+  
+          
+    <div class="size">
 
-   <div class="imageDiv"> <img src="Freelance Img/SurveyF.svg" alt="">
+      <div class="imageDiv"> <img src="Freelance Img/pro.jpg" alt="">
+       </div>
+   
+      <div class="Adiv"><strong class="a">Programming & Tech</strong></p></div>
+      <button>
+        <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
+          Become a Freelancer Now!</a></button>  
     </div>
 
-   <div class="Adiv"><strong class="a">Writing and Translations</strong></p></div>
+    <div class="size">
+
+      <div class="imageDiv"> <img src="Freelance Img/DigI.jpg" alt="">
+       </div>
+   
+      <div class="Adiv"><strong class="a">Digital Marketing</strong></p></div>
+      <button>
+         <a  href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
+
+        Become a Freelancer Now!</a></button>  
+     
+    </div>
+
+    <div class="size">
+
+      <div class="imageDiv"> <img src="Freelance Img/gra.jpg" alt="">
+       </div>
+   
+      <div class="Adiv"><strong class="a">Graphic & Design </strong></p></div>
+      <button>
+        <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
+
+        Become a Freelancer Now!</a></button>   
+    </div>
+   
+   <div class="size">
+
+   <div class="imageDiv"> <img src="Freelance Img/Wri.jpg" alt="">
+    </div>
+
+   <div class="Adiv"><strong class="a">Writing & Translations</strong></p></div>
   <button>
     <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
       Become a Freelancer Now!</a></button> 
   </div>
 
    <div class="size">
-
-    <div class="imageDiv"> <img src="Freelance Img/apptest.svg" alt="">
+ 
+    <div class="imageDiv"> <img src="Freelance Img/aud.jpg" alt="">
      </div>
  
-    <div class="Adiv"><strong class="a">Music and Audio</strong></p></div>
+    <div class="Adiv"><strong class="a">Music & Audio</strong></p></div>
       <button>
         <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
           Become a Freelancer Now!</a></button> 
     </div>
 
-    
-    <div class="size">
 
-        <div class="imageDiv"> <img src="Freelance Img/webD.svg" alt="">
-         </div>
-     
-        <div class="Adiv"><strong class="a">Programming and Tech</strong></p></div>
-        <button>
-          <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
-            Become a Freelancer Now!</a></button>  
-      </div>
-     
-        <div class="size">
-
-            <div class="imageDiv"> <img src="Freelance Img/dig.webp" alt="">
-             </div>
-         
-            <div class="Adiv"><strong class="a">Digital Marketing</strong></p></div>
-            <button>
-               <a  href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
-
-              Become a Freelancer Now!</a></button>  
-           
-          </div>
          
             <div class="size">
 
-                <div class="imageDiv"> <img src="Freelance Img/Junior.svg" alt="">
+                <div class="imageDiv"> <img src="Freelance Img/anim.jpg" alt="">
                  </div>
              
-                <div class="Adiv"><strong class="a">Video and animation </strong></p></div>
+                <div class="Adiv"><strong class="a">Video & animation </strong></p></div>
                 <button>
                   
                   <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
@@ -664,17 +621,7 @@ padding: 0.5%;
                   Become a Freelancer Now!</a></button>    
               </div>
              
-                <div class="size">
-
-                    <div class="imageDiv"> <img src="Freelance Img/Graphics.svg" alt="">
-                     </div>
-                 
-                    <div class="Adiv"><strong class="a">Graphic-Designer </strong></p></div>
-                    <button>
-                      <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
-
-                      Become a Freelancer Now!</a></button>   
-                  </div>
+       
 
                    
            

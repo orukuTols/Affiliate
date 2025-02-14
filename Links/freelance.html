@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance-Hub</title>
+    <style>
+        body {
+           background-color: rgb(132, 51, 78);
+            width: 100%;
+            margin: 0;
+       
+        }
+
+        h1 {
+            color: white;
+            background-color: black;
+            border: 3px solid red;
+            border-radius: 4%;
+      padding: 1%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #Intro {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+           background-image: linear-gradient(90deg, darkblue, darkcyan, black);
+        
+       
+        }
+
+        #Intro p {
+          font-size: large;
+          font-family: monospace;
+          font-weight: bold;
+          color: white;
+          text-align: center;
+        }
+
+        #Container {
+            width: 100%;
+         display: grid;
+         grid-template-columns: 1fr 1fr;    
+         grid-template-rows: 1fr;
+         justify-items: center;
+        grid-column-gap: 20px;
+        grid-row-gap: 35px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        
+        }
+
+  
+       
+        
+        #Container .size {
+            width: 95%;
+        }
+
+        .size {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition:  transform 2s ease-in-out, box-shadow 1s ease, border-radius 0.5s ease;
+        
+             
+             background-color: silver;
+             
+          
+        }
+
+   .size:hover {
+ border-radius: 4%;
+
+    background-color: aliceblue;
+   transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(255, 250, 250, 0.692);
+   
+   }
+
+ 
+        .size div {
+           
+       
+          
+      
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+          
+        }
+
+        .imageDiv {
+          width: 100%;
+      
+        
+}
+
+  
+        .Adiv {
+          width: 100%;
+          background-image: linear-gradient(grey,black);
+          font-family: Roboto;
+        
+        color: white;
+       
+         font-size: large;
+         font-weight: bold;
+         font-family: Arial, Helvetica, sans-serif;
+      
+        }
+
+     
+        #Container div img{
+            width: 100%;
+           height: 45vh;
+
+        }
+
+        
+
+         
+    
+       
+
+      
+            
+   
+
+     @media only screen and (max-height: 680px) { 
+
+      #Container div img{
+            width: 100%;
+            height: 45vh;
+        
+        }
+     }
+
+
+
+     
+     
+     @media only screen and (max-height: 580px) { 
+
+#Container div img{
+      width: 100%;
+      height: 50vh;
+
+  }
+
+}
+
+
+@media only screen and (max-height: 400px) { 
+
+#Container div img{
+      width: 100%;
+      height: 60vh;
+      
+  }
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 580px) {
+ 
+  #Container {
+            width: 80%;
+         display: grid;
+         grid-template-columns: 1fr;    
+         grid-template-rows: 1fr;
+         justify-items: center;
+        grid-gap: 20px;
+        
+        }
+
+        #Intro p {
+font-size: large;
+    }
+
+
+    #Exp {
+    width: 100%;
+    font-size: small;
+    color: snow;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-family: sans-serif;
+
+
+
+
+
+
+ font-weight: bold;
+   }
+
+   #Exp li {
+    font-size: small;
+   }
+
+h1 {
+    font-size: large;
+}
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+    
+  body {
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  }
+
+
+  #Intro p {
+font-size: x-large;
+    }
+
+
+    #Exp {
+    width: 80%;
+    font-size: large;
+    color: snow;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-family: sans-serif;
+ font-weight: bold;
+   }
+
+
+ 
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+body {
+
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+
+#Container { 
+width: 90%;
+}
+
+.Adiv strong {
+font-size: x-large;
+}
+
+#Container div img{
+      width: 100%;
+ 
+     
+  }
+
+#Intro p {
+font-size: xx-large;
+}
+
+
+#Exp {
+width: 50%;
+font-size: xx-large;
+color: snow;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: sans-serif;
+font-weight: bold;
+}
+
+
+}
+
+@media only screen and (min-width: 1250px) {
+
+
+
+#Container { 
+width: 65%;
+}
+
+#Container div img{
+      width: 100%;
+      height: 60vh;
+     
+  }
+}
+
+  @media (min-height: 900px) and (min-width: 550px) and (max-width: 1000px)  {
+
+
+    #Container {
+            width: 70%;
+         display: grid;
+         grid-template-columns: 1fr;    
+         grid-template-rows: 1fr;
+         justify-items: center;
+        grid-gap: 20px;
+        
+        }
+
+        #Container div img{
+      width: 100%;
+      height: 50vh;
+     
+  }
+
+
+  .size button a {
+    font-size: x-large;
+    
+  }
+
+  .size button {
+    padding: 1%;
+  }
+
+  .Adiv strong {
+    font-size: x-large;
+    padding: 1%;
+  }
+}
+
+button {
+ 
+  font-size: x-large;
+  padding: 1%;
+  font-weight: bold;
+   
+  border-radius: 4%;
+  margin-top: 1%;
+  background-color:  black
+  ;
+
+}
+
+button a {
+  color: crimson;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+
+
+.fi {
+  font-size: xx-large;
+  text-decoration: underline crimson;
+  
+}
+
+
+.size:hover button {
+    background-color: rgb(129, 12, 35);
+
+
+   }
+
+   button a{ 
+font-size: large;
+   }
+
+   
+.size:hover button a{
+ color: white;
+ text-decoration: underline gold;
+    
+
+   }
+
+   .size:hover .Adiv {
+    background-image: none;
+    background-color: black;
+   }
+
+
+  
+
+   #Exp {
+
+
+    color: snow;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-family: sans-serif;
+   }
+
+   #Exp p {
+   
+    padding-top: 2%;
+    padding-bottom: 2%;
+   text-shadow: 1px 1px black;
+   border-top: 2px solid grey;
+   border-bottom: 2px solid grey;
+   border-right: 2px solid grey;
+
+
+   }
+
+#Exp ol {
+  width: 80%;
+  border-left: 1px solid goldenrod;
+   border-bottom: 1px solid goldenrod;
+   border-right: 1px solid goldenrod;
+  
+ 
+}
+
+#Exp ul {
+    width: 80%;
+  border-bottom: 2px solid aquamarine;
+   border-top: 2px solid aquamarine;
+    
+}
+
+li {
+  padding: 2%;
+
+ 
+}
+ 
+
+h3 {
+  text-decoration: underline crimson;
+}
+
+
+
+        
+        
+     @media only screen and (max-height: 680px) { 
+
+#Container div img{
+      width: 100%;
+      height: 45vh;
+   
+  }
+}
+
+
+@media only screen and (max-height: 580px) { 
+
+#Container div img{
+width: 100%;
+height: 50vh;
+
+}
+
+}
+
+
+
+
+@media only screen and (max-height: 400px) { 
+
+#Container div img{
+width: 100%;
+height: 60vh;
+
+}
+
+
+}
+      
+
+.p {
+    
+    color: black;
+    text-shadow: 0.3px 0.3px sienna;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.some {
+  width: 85%;
+  text-align: center;
+  
+
+}
+
+#Final {
+  width: 100%;
+  
+  padding-bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.final {
+
+  background-color: rgb(17, 135, 96);
+  padding-bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+
+.final h2 {
+  color: white;
+  font-family: sans-serif;
+  text-shadow: 1px 1px black;
+}
+
+#Final .final button {
+padding: 0.5%;
+  background-color:burlywood;
+   
+}
+
+.final button:hover {
+  background-color: black;
+}
+
+.final a {
+  font-family: sans-serif;
+  color: black;
+}
+
+
+.final button:hover a{
+  color: red;
+} 
+
+
+    </style>
+</head>
+<body>
+  
+    <div id="Intro">
+        <h1>Start your Freelancing Journey</h1>
+
+        <p>Turn your skills into Income!</p>
+        
+    </div>
+
+
+    <div id="Exp">
+      <p> "Join Fiverr and connect with clients worldwide. work from anywhere and get paid for what you love doing"
+        <br>
+        Start Freelancing on ? <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
+          Fiverr</a>
+      </p>
+
+ 
+        <ol>
+
+          <h3>
+            Why Freelance on Fiverr?    </h3>
+           
+          <li> ✅ Work on your terms – Set your own schedule.</li> 
+          <li>   ✅ No experience needed – Just showcase your skills.</li> 
+            <li>   ✅ Global clients – Get hired from anywhere.</li> 
+            <li>   ✅ Secure payments – Fiverr ensures safe transactions.</li> 
+            
+        </ol>
+        
+
+
+   <ul>
+    <h3>How to Get Started:</h3>
+
+  <li>⿡ Sign Up for Free – Create a Fiverr account.</li>
+  <li>⿢ Set Up Your Profile – Describe your expertise.</li>
+  <li>⿣ Create a Gig – Offer services like design, writing, or tech.</li>
+    <li>⿤ Start Earning – Get hired and receive payments securely.</li>
+
+  <p>📌 Bonus Tip: Choose a niche with high demand to get hired faster!</p>
+</ul>
+
+  
+    </div>
+
+  
+
+   <div class="some"> <h2 class="p">These are some of the Freelance Jobs You Can Do on Fiverr: </h2> </div>
+    <div id="Container">
+     
+   <div class="size">
+
+   <div class="imageDiv"> <img src="Freelance Img/SurveyF.svg" alt="">
+    </div>
+
+   <div class="Adiv"><strong class="a">Writing and Translations</strong></p></div>
+  <button>
+    <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
+      Become a Freelancer Now!</a></button> 
+  </div>
+
+   <div class="size">
+
+    <div class="imageDiv"> <img src="Freelance Img/apptest.svg" alt="">
+     </div>
+ 
+    <div class="Adiv"><strong class="a">Music and Audio</strong></p></div>
+      <button>
+        <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
+          Become a Freelancer Now!</a></button> 
+    </div>
+
+    
+    <div class="size">
+
+        <div class="imageDiv"> <img src="Freelance Img/webD.svg" alt="">
+         </div>
+     
+        <div class="Adiv"><strong class="a">Programming and Tech</strong></p></div>
+        <button>
+          <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
+            Become a Freelancer Now!</a></button>  
+      </div>
+     
+        <div class="size">
+
+            <div class="imageDiv"> <img src="Freelance Img/dig.webp" alt="">
+             </div>
+         
+            <div class="Adiv"><strong class="a">Digital Marketing</strong></p></div>
+            <button>
+               <a  href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
+
+              Become a Freelancer Now!</a></button>  
+           
+          </div>
+         
+            <div class="size">
+
+                <div class="imageDiv"> <img src="Freelance Img/Junior.svg" alt="">
+                 </div>
+             
+                <div class="Adiv"><strong class="a">Video and animation </strong></p></div>
+                <button>
+                  
+                  <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
+
+                  Become a Freelancer Now!</a></button>    
+              </div>
+             
+                <div class="size">
+
+                    <div class="imageDiv"> <img src="Freelance Img/Graphics.svg" alt="">
+                     </div>
+                 
+                    <div class="Adiv"><strong class="a">Graphic-Designer </strong></p></div>
+                    <button>
+                      <a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
+
+                      Become a Freelancer Now!</a></button>   
+                  </div>
+
+                   
+           
+
+        
+                  
+    </div>
+
+
+    <div id="Final">
+      <div class="final">
+             <h2> Start earning today! Click below to create your Fiverr account and begin freelancing. <br>
+<button><a href="https://go.fiverr.com/visit/?bta=1093649&brand=fiverrmarketplace&landingPage=https%3A%2F%2Fwww.fiverr.com%2Fstart_selling" target="_blank">
+  Start Freelancing Now!</a></button></h2> 
+</div>
+    </div>
+    
+</body>
+</html>

@@ -13,7 +13,88 @@
     }
 
 
-    @media only screen and (min-width: 901px) {
+     
+    @media only screen and (min-width: 1500px) {
+      .header h1{
+font-size: scale(2);
+      }
+
+      .header p {
+        font-size: xx-large;
+      }
+.Descr {
+width: 960px;
+font-size: xx-large;
+
+}
+
+.a button {
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Divi {
+  width: 700px;
+  font-size: xx-large;
+}
+
+.Divi h2{
+font-size: xx-large;
+}
+
+
+ .footer .firstF {
+width: 800px;
+font-size: xx-large;
+}
+    }
+    
+    @media only screen and (max-width: 1500px) {
+
+      .header h1{
+font-size: scale(1.5);
+      }
+
+      .header p {
+        font-size: x-large;
+      }
+.Descr {
+width: 70%;
+font-size: x-large;
+
+}
+
+.a button {
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Divi {
+  width: 45%;
+  font-size: x-large;
+}
+
+.Divi h2{
+font-size: x-large;
+}
+
+
+ .footer .firstF {
+width: 60%;
+font-size: x-large;
+}
+    }
+
+
+    @media only screen and (max-width: 999px) {
+
+      .header h1{
+font-size: scale(1);
+      }
+
+      .header p {
+        font-size: x-large;
+      }
       #Intro {
         font-size: xx-large;
       }
@@ -24,12 +105,42 @@
 
       .b {
   font-size: xx-large;
+}
+
+.Descr {
+width: 700px;
+font-size: x-large;
+
+}
+
+.a button {
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Divi {
+  width: 400px;
+  font-size: large;
+}
+
+.Divi h2 {
+  font-size: x-large;
+}
 
 
+
+ .footer .firstF {
+width: 600px;
+font-size: x-large;
 }
     }
 
     @media only screen and (min-width: 700px) and  (max-width: 900px){
+      
+
+      .header p {
+        font-size: large;
+      }
       #Intro {
         font-size: x-large;
       }
@@ -45,9 +156,37 @@
 }
 
 
+.Descr {
+width: 70%;
+font-size: large;
+
+}
+
+.a button {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Divi {
+  width: 40%;
+  
+}
+
+.Divi h2 {
+  font-size: large;
+}
+
+
+ .footer .firstF {
+width: 50%;
+}
     }
 
     @media only screen and (min-width: 500px) and (max-width: 699px) {
+     
+      .header p {
+        font-size: large;
+      }
       #Intro {
         font-size: x-large;
       }
@@ -59,11 +198,40 @@
       .b {
   font-size: large;
   
+      }
+  .Descr {
+width: 80%;
+font-size: large;
 
 }
-    }
+
+.a button {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Divi {
+  width: 50%;
+  
+}
+
+.Divi h2 {
+  font-size: large;
+}
+
+
+ .footer .firstF {
+width: 70%;
+}
+}
+    
 
     @media only screen and (max-width: 500px) {
+
+      
+      .header p {
+        font-size: large;
+      }
       #Intro {
         font-size: large;
       }
@@ -73,8 +241,67 @@
       #Intro .hThree {
         width: 80%;
       }
+
+      
+.Descr {
+width: 80%;
+font-size: medium;
+
+}
+
+.a button {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Divi {
+  width: 75%;
+  font-size: medium;
+  
+}
+
+.Divi h2 {
+  font-size: large;
+}
+
+
+ .footer .firstF {
+width: 80%;
+}
     }
 
+    @media only screen and (max-width:350px){
+  
+      
+      .header p {
+        font-size: medium;
+      }
+.Descr {
+width: 90%;
+font-size: medium;
+
+}
+
+.a button {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Divi {
+  width: 85%;
+  
+}
+
+.Divi h2 {
+  font-size: large;
+}
+
+
+ .footer .firstF {
+width: 100%;
+font-size: large;
+}
+    }
 
 
     #Intro {
@@ -174,14 +401,15 @@ border: 2px solid purple;
 #Contain {
   display: none;
   width: 100%;
-  background-image: linear-gradient(90deg, rgb(134, 107, 107), rgb(17, 74, 107), black);
-  justify-content: center;
+
+
   align-items: center;
   flex-direction: column
 }
 
 .header {
   width: 100%;
+  background-image: linear-gradient(90deg, rgb(134, 107, 107), rgb(17, 74, 107), black);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -189,7 +417,7 @@ border: 2px solid purple;
 }
 
  .header h1 {
-  color: orangered;
+  color: brown;
   font-family: Arial, Helvetica, sans-serif;
   background-color: burlywood;
   border-radius: 4%;
@@ -198,12 +426,144 @@ border: 2px solid purple;
 }
 
 .header p {
-  font-size: large;
+  
           font-family: monospace;
           font-weight: bold;
           color: white;
           text-align: center;
 }
+
+.body {
+  width: 100%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Descr {
+ 
+  background-color: burlywood;
+  color: brown;
+
+  padding: 1.5%;
+  line-height: 1.2em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 2px solid crimson;
+  border-left: 2px solid crimson;
+  border-right: 2px solid crimson;
+  border-radius: 4%;
+  box-shadow: 0 8px 15px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.a  button{
+  
+  padding: 1.5%;
+  border-radius: 5%;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: rebeccapurple;
+}
+
+.a button:hover {
+
+background-color: darkblue;
+color: red;
+transform: scale(1.005);
+}
+
+.Divi {
+
+  
+ 
+  background-color: darkblue;
+  box-shadow: 0 8px 15px snow;
+  color: white;
+  padding: 1%;
+  border-radius: 4%;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+
+}
+
+
+.Divi h2 {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gold;
+  text-decoration: underline dotted snow;
+}
+
+.Divi .One {
+  width: 80%;
+
+}
+
+.One ol {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr, 3;
+  gap: 20px;
+  padding: 1%;
+}
+
+
+
+strong {
+  color: blue;
+  text-decoration: underline crimson;
+}
+
+.footer {
+  margin-top: 3%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer  .firstF{
+ 
+
+ font-weight: bold;
+ font-family: monospace;
+ color: brown;
+}
+
+.footer .secondF{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;    
+  grid-template-rows: 1fr;
+   justify-items: center;
+  grid-column-gap: 20px;
+  grid-row-gap: 35px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.secondF div {
+  width: 100%;
+  height: 30vh;
+  border-radius: 4%;
+ 
+}
+
 
   </style>
 </head>
@@ -227,20 +587,89 @@ border: 2px solid purple;
 
   <div id="Contain">
    <div class="header">
-<h1>Travel Deals</h1>
-<p>Explore the best travel deals - Affordable, 
-  Reliable, Unforgetabble!
+<h1>🌍 Travel Deals</h1>
+<p>Unbeatable Travel Deals! - Your Next Adventure Starts Here!
 
 </p>
    </div>
 
    <div class="body">
+    <div class="Descr">
+<p>From budget-firendly flights to luxury vacations, we bring you top-rated travel deals.
+  And don't worry about the price because here at
+  <strong>Tolu's Ad's</strong> we care about  
+  Your pocket even more than you do.
+  <br>
+  <br>
+<a  class="a" href="" target="_blank"><button>Plan
+   your next trip with WAKANOW
+  </button></a></p>
+</div>
 
+<br>
+<br>
+<div class="Divi">
+<h2>Why Book with Wakanow?</h2>
+
+<div class="One">
+  <ol>
+    <li>
+Wakanow offers affordable flights, hotels,
+ and vacation packages with unbeatable deals.
+</li>
+
+ <li>
+  With Pay Small Small (PSS), you can book your
+   trip and pay in flexible installments,
+    making travel easier on your budget.
+  </li>
+
+    <li>
+     Enjoy 24/7 customer support, visa assistance,
+      and travel insurance, ensuring a stress-free 
+      journey.
+    </li>
+
+   
+      </ol>
+
+</div>
    </div>
 
    <div class="footer">
+    <div class="firstF">
+<p>
+ Wakanow guarantees top-rated services and exclusive discounts
+   to make your trip unforgettable!
+</p>
 
-   </div>
+
+
+</div>
+
+<div class="secondF">
+  <div><a href="">
+    <div><img src="" alt=""></div>
+    <div><p></p></div>
+  </a></div>
+
+  <div>
+    <a href="">
+      <div><img src="" alt=""></div>
+      <div><p></p></div>
+    </a>
+  </div>
+
+  <div><a href="">
+    <div><img src="" alt=""></div>
+    <div><p></p></div>
+  </a></div>
+
+  <div><a href="">
+    <div><img src="" alt=""></div>
+    <div><p></p></div>
+  </a></div>
+</div>
   </div>
 
 </body>

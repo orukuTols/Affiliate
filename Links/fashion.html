@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion-deals</title>
     <style>
-  body {
-           background-color: rgb(72, 102, 13);
+
+
+      body {
+           background-color: rgb(62, 10, 114);
             width: 100%;
             margin: 0;
+          
        
         }
 
         h1 {
-            color: white;
-            background-color: green;
-          
-            font-family: Arial, Helvetica, sans-serif;
+            color: greenyellow;
+            background-color: black;
+            border: 5px solid white;
+   padding: 0.5%;
+           font-family: Arial, Helvetica, sans-serif;
         }
 
         #Intro {
@@ -25,7 +29,7 @@
             width: 100%;
             justify-content: center;
             align-items: center;
-           background-image: linear-gradient(90deg, rgb(134, 107, 107), rgb(160, 117, 9), black);
+           background-image: linear-gradient(90deg, orangered, rgb(1, 80, 1), black);
         
        
         }
@@ -35,6 +39,7 @@
           font-family: monospace;
           font-weight: bold;
           color: white;
+          text-shadow: 1px 1px black;
           text-align: center;
         }
 
@@ -44,8 +49,8 @@
          grid-template-columns: 1fr 1fr;    
          grid-template-rows: 1fr;
          justify-items: center;
-        grid-column-gap: 20px;
-        grid-row-gap: 35px;
+        grid-column-gap: 15px;
+        grid-row-gap: 25px;
         padding-top: 2%;
         padding-bottom: 2%;
         
@@ -66,7 +71,7 @@
             transition:  transform 2s ease-in-out, box-shadow 1s ease, border-radius 0.5s ease;
         
              
-             background-color: goldenrod;
+             background-color: darkcyan;
              
           
         }
@@ -102,11 +107,11 @@
   
         .Adiv {
           width: 100%;
-          background-color: rgb(7, 172, 117);
+          background-color: darkred;
           font-family: Roboto;
         
-        color: white;
-       
+        color: orange;
+       text-shadow: 1px 1px black;
          font-size: large;
          font-weight: bold;
          font-family: Arial, Helvetica, sans-serif;
@@ -116,17 +121,18 @@
      
         #Container div img{
             width: 100%;
-            height: 40vh;
+          height: 50vh;
 
         }
 
         
 
+
         @media only screen and (max-height: 680px) { 
 
 #Container div img{
-      width: 100%;
-      height: 45vh;
+   
+      height: 60vh;
   
   }
 }
@@ -135,64 +141,7 @@
 
 
 
-@media only screen and (max-height: 580px) { 
-
-#Container div img{
-width: 100%;
-height: 50vh;
-
-}
-
-}
-
-
-@media only screen and (max-height: 400px) { 
-
-#Container div img{
-width: 100%;
-height: 60vh;
-
-}
-
-
-}
-
-@media only screen and (min-width: 800px) { 
-
-#Container div img{
-width: 100%;
-height: 40vh;
-
-
-}
-.imageDiv {
-    width: 100%;
-    
-}
-}
-
-
-
-  @media only screen and (max-width: 300px) {
-
-
-
-#Container {
-      width: 100%;
-   display: grid;
-   grid-template-columns: 1fr;    
-   grid-template-rows: 1fr;
-   justify-items: center;
-  grid-gap: 20px;
-  
-  }
-
-
-
-}
-
-
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 520px) {
 
 
 
@@ -226,11 +175,67 @@ font-weight: bold;
 font-size: small;
 }
 
+.Adiv .a {
+font-size: small;
+}
 
 
 }
 
+
+@media only screen and (min-width: 521px) and (max-width: 620px) {
+
+
+  #Container {
+      width: 100%;
+   display: grid;
+   grid-template-columns: 1fr;    
+   grid-template-rows: 1fr;
+   justify-items: center;
+ 
+  
+  }
+#Container .size {
+  width: 70%;
+}
+  #Intro p {
+font-size: large;
+}
+
+
+#Exp {
+width: 100%;
+font-size: small;
+color: snow;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: sans-serif;
+font-weight: bold;
+}
+
+#Exp li {
+font-size: small;
+}
+
+.Adiv .a {
+font-size: small;
+}
+
+}
+
+@media only screen and (max-width: 750px) {
+
+.Adiv .a {
+font-size: medium;
+}
+}
 @media only screen and (max-width: 1000px) {
+
+  .Adiv strong {
+font-size: large;
+}
+
 body {
 
 width: 100%;
@@ -276,20 +281,22 @@ align-items: center;
 }
 
 #Container { 
-width: 85%;
+width: 80%;
 }
 
-Adiv strong {
-font-size: x-large;
+.Adiv strong {
+font-size: large;
 }
+
+
 
 #Container div img{
       width: 100%;
-      height: 50vh;
+     
   }
 
 #Intro p {
-font-size: xx-large;
+font-size: x-large;
 }
 
 
@@ -307,136 +314,24 @@ font-weight: bold;
 
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1250px) {
 
-
+  .Adiv .a {
+font-size: large;
+}
 
 #Container { 
 width: 65%;
 }
 
-
-
-
-
-}
-
-button {
-
-font-size: x-large;
-padding: 1%;
-font-weight: bold;
-
-border-radius: 4%;
-margin-top: 1%;
-background-color:  black
-;
-
-}
-
-button a {
-color: crimson;
-font-family: sans-serif;
-text-decoration: none;
-}
-
-
-
-.fi {
-font-size: xx-large;
-text-decoration: underline black;
-
-}
-
-
-.size:hover button {
-background-color: rgb(129, 12, 35);
-
-
-}
-
-
-
-.size:hover button a{
-color: white;
-text-decoration: underline gold;
-
-
-}
-
-
-#Exp {
-
-
-color: snow;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-font-family: sans-serif;
-}
-
-#Exp p {
-
-padding-top: 1%;
-padding-bottom: 1%;
-text-shadow: 1px 1px black;
-border-top: 3px solid black;
-border-bottom: 3px solid black;
-border-right: 3px solid black;
-font-family: monospace;
-color: goldenrod;
-
-}
-
-#Exp ol {
-width: 80%;
-border-left: 2px solid crimson;
-border-bottom: 2px solid crimson;
-border-right: 2px solid crimson;
-
-}
-
-li {
-padding: 1%;
-}
-
-
-h3 {
-text-decoration: underline crimson;
-}
-
-
-
-@media only screen and (max-height: 680px) { 
-
 #Container div img{
       width: 100%;
-      height: 45vh;
-
+      height: 60vh;
+     
   }
-}
 
+  
 
-@media only screen and (max-height: 580px) { 
-
-#Container div img{
-width: 100%;
-height: 50vh;
-
-}
-}
-
-
-
-
-@media only screen and (max-height: 400px) { 
-
-#Container div img{
-width: 100%;
-height: 60vh;
-
-}
 
 
 }
@@ -471,12 +366,107 @@ font-size: x-large;
 padding: 1%;
 }
 
-.Adiv strong {
-font-size: x-large;
-padding: 1%;
-}
+
 }
 
+.size button {
+
+font-size: x-large;
+padding: 1%;
+font-weight: bold;
+
+border-radius: 4%;
+margin-top: 1%;
+background-color:  white
+;
+
+}
+
+.size button a {
+color: blue;
+font-family: sans-serif;
+text-decoration: none;
+}
+
+
+
+.fi {
+font-size: xx-large;
+text-decoration: underline black;
+
+}
+
+
+.size:hover button {
+background-color: rgb(129, 12, 35);
+
+
+}
+
+
+
+.size:hover button a{
+color: white;
+text-decoration: underline gold;
+
+
+}
+
+.size:hover .a{
+color: white;
+text-shadow: 1px 1px black;
+
+
+
+}
+
+
+#Exp {
+
+
+color: snow;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: sans-serif;
+}
+
+#Exp p {
+
+padding-top: 1%;
+padding-bottom: 1%;
+text-shadow: 1px 1px black;
+border-top: 3px solid whitesmoke;
+border-bottom: 3px solid whitesmoke;
+border-right: 3px solid whitesmoke;
+font-family: monospace;
+color: goldenrod;
+
+}
+
+#Exp ol {
+width: 80%;
+border-left: 2px solid crimson;
+border-bottom: 2px solid crimson;
+border-right: 2px solid crimson;
+
+}
+
+li {
+padding: 1%;
+}
+
+
+h3 {
+text-decoration: underline crimson;
+}
+
+
+
+
+
+        
     </style>
 </head>
 <body>
@@ -509,146 +499,112 @@ padding: 1%;
 
     <div id="Container">
 
+
       <div class="size">
    
-      <div class="imageDiv"> <img src="Fashion Img/miniSkirt.jpg" alt="">
+        <div class="imageDiv"> <img src="Fashion Img/redS.webp" alt="">
+         </div>
+     
+        <div class="Adiv"><strong class="a">Valentine Three-Piece Set 71% off</strong></p></div>
+        <button>
+         <a target="_blank"  href="https://app.temu.com/m/nx29biq0x3n">Expires Soon!</a>
+       </button>
+       </div>
+
+      <div class="size">
+   
+      <div class="imageDiv"> <img src="Fashion Img/casSp.webp" alt="">
        </div>
    
-      <div class="Adiv"><strong class="a">Mini-skirt Sales 33% off</strong></p></div>
-<button>
-  <a href="">Shop Now and Save!</a>
-</button>
+      <div class="Adiv"><strong class="a">Men's Sportswear set 60% off</a></strong></p></div>
+      <button>
+       <a target="_blank"href="https://app.temu.com/m/n5kmanrnyzj">
+      Shop Now and Save!
+        </a>
+      </button>
       </div>
    
       <div class="size">
    
-       <div class="imageDiv"> <img src="Fashion Img/newS.jpg" alt="">
+       <div class="imageDiv"> <img src="Fashion Img/CoolS.webp" alt="">
         </div>
     
-       <div class="Adiv"><strong class="a">Algazi Men's 30% off</strong></p></div>
-       <button>
-        <a  href="">Shop Now and Save!</a>
-      </button>
-      </div>
+       <div class="Adiv"><strong class="a">MAINALUN Men's 43% off</strong></p></div>
+       
+      <button>
+        <a target="_blank"href="https://app.temu.com/m/n8861wal6dp">
+      Shop Now and Save!
+        </a>
+      </button></div>
    
        
        <div class="size">
    
-           <div class="imageDiv"> <img src="Fashion Img/ashion.jpg" alt="">
+           <div class="imageDiv"> <img src="Fashion Img/secCo.webp">
             </div>
         
-           <div class="Adiv"><strong class="a">Ashion Martin 49% off</strong></p></div>
-            <button>
-              <a  href="">Shop Now and Save!</a>
-            </button>
-          </div>
+           <div class="Adiv"><strong class="a">Men Shoes Fabric Lining 60% off</strong></p></div>
+           
+          <button>
+            <a target="_blank"href="https://app.temu.com/m/nestw79fwbw">
+          Shop Now and Save!
+            </a>
+          </button></div>
         
            <div class="size">
    
-               <div class="imageDiv"> <img src="Fashion Img/danami.jpg" alt="">
+               <div class="imageDiv"> <img src="Fashion Img/blackW.webp">
                 </div>
             
-               <div class="Adiv"><strong class="a">Danami Women 9,900 naira</strong></p></div>
-               <button>
-                <a  href="">Shop Now and Save!</a>
-              </button> 
-              </div>
-
+               <div class="Adiv"><strong class="a">Men's  Sports Smartwatch 64% off</strong></p></div>
+               
+              <button>
+                <a target="_blank"href="https://app.temu.com/m/nxkz7k29okv">
+              Shop Now and Save!
+                </a>
+              </button></div>
             
                <div class="size">
    
-                   <div class="imageDiv"> <img src="Fashion Img/danamiT.jpg" alt="">
+                   <div class="imageDiv"> <img src="Fashion Img/flyG.webp">
                     </div>
                 
-                   <div class="Adiv"><strong class="a">Danami Tie & Dies 9,999 naira</strong></p></div>
-                   <button>
-                    <a  href="">Shop Now and Save!</a>
-                  </button> 
-                  </div>
+                   <div class="Adiv"><strong class="a">Retro Fashion Punk  Glasses 63% off</strong></p></div>
+                   
+                  <button>
+                    <a target="_blank"href="https://app.temu.com/m/n44irlxyg39">
+                  Shop Now and Save!
+                    </a>
+                  </button></div>
                 
-
                    <div class="size">
    
-                       <div class="imageDiv"> <img src="Fashion Img/kingKartel.jpg" alt="">
+                       <div class="imageDiv"> <img src="Fashion Img/dragS.webp" alt="">
                         </div>
                     
-                       <div class="Adiv"><strong class="a">Kings-Kartel Combo 23% Off</strong></p></div>
-                        <button>
-                          <a  href="">Shop Now and Save!</a>
-                        </button> 
-                      </div>
-
+                       <div class="Adiv"><strong class="a">3D Print Mythical Dragon  Set 55% off</strong></p></div>
+                       
+                      <button>
+                        <a target="_blank"href="https://app.temu.com/m/nwfhxb6k06e">
+                      Shop Now and Save!
+                        </a>
+                      </button></div>
 
                       
-      <div class="size">
+                      <div class="size">
    
-        <div class="imageDiv"> <img src="Fashion Img/miniSkirt.jpg" alt="">
-         </div>
-     
-        <div class="Adiv"><strong class="a">Mini-skirt Sales 33% off</strong></p></div>
-  <button>
-    <a href="">Shop Now and Save!</a>
-  </button>
-        </div>
-     
-        <div class="size">
-     
-         <div class="imageDiv"> <img src="Fashion Img/newS.jpg" alt="">
-          </div>
-      
-         <div class="Adiv"><strong class="a">Algazi Men's 30% off</strong></p></div>
-         <button>
-          <a  href="">Shop Now and Save!</a>
-        </button>
-        </div>
-     
-         
-         <div class="size">
-     
-             <div class="imageDiv"> <img src="Fashion Img/ashion.jpg" alt="">
-              </div>
-          
-             <div class="Adiv"><strong class="a">Ashion Martin 49% off</strong></p></div>
-              <button>
-                <a  href="">Shop Now and Save!</a>
-              </button>
-            </div>
-          
-             <div class="size">
-     
-                 <div class="imageDiv"> <img src="Fashion Img/danami.jpg" alt="">
-                  </div>
-              
-                 <div class="Adiv"><strong class="a">Danami Women 9,900 naira</strong></p></div>
-                 <button>
-                  <a  href="">Shop Now and Save!</a>
-                </button> 
-                </div>
-  
-              
-                 <div class="size">
-     
-                     <div class="imageDiv"> <img src="Fashion Img/danamiT.jpg" alt="">
-                      </div>
-                  
-                     <div class="Adiv"><strong class="a">Danami Tie & Dies 9,999 naira</strong></p></div>
-                     <button>
-                      <a  href="">Shop Now and Save!</a>
-                    </button> 
-                    </div>
-                  
-  
-                     <div class="size">
-     
-                         <div class="imageDiv"> <img src="Fashion Img/kingKartel.jpg" alt="">
-                          </div>
-                      
-                         <div class="Adiv"><strong class="a">Kings-Kartel Combo 23% Off</strong></p></div>
-                          <button>
-                            <a  href="">Shop Now and Save!</a>
-                          </button> 
+                        <div class="imageDiv"> <img src="Fashion Img/hotJ.webp" alt="">
+                         </div>
+                     
+                        <div class="Adiv"><strong class="a">Women'S Denim Cotton Jeans 65% off</a></strong></p></div>
+                        <button>
+                         <a target="_blank"href="https://app.temu.com/m/nck1vrvq4gi">
+                        Shop Now and Save!
+                          </a>
+                        </button>
                         </div>
-
+                     
+             
                       
               
                     
@@ -657,3 +613,10 @@ padding: 1%;
     
 </body>
 </html>
+
+
+
+  
+
+
+  

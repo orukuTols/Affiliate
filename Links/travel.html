@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel-deals</title>
+  <style>
+    body {
+ margin: 0;
+      width: 100%;
+      background-color: deepskyblue;
+     
+    }
+
+
+    @media only screen and (min-width: 901px) {
+      #Intro {
+        font-size: xx-large;
+      }
+
+      #Intro .hThree {
+        width: 50%;
+      }
+
+      .b {
+  font-size: xx-large;
+
+
+}
+    }
+
+    @media only screen and (min-width: 700px) and  (max-width: 900px){
+      #Intro {
+        font-size: x-large;
+      }
+
+      #Intro .hThree {
+        width: 70%;
+      }
+
+      .b {
+  font-size: x-large;
+  
+
+}
+
+
+    }
+
+    @media only screen and (min-width: 500px) and (max-width: 699px) {
+      #Intro {
+        font-size: x-large;
+      }
+
+      #Intro .hThree {
+        width: 70%;
+      }
+
+      .b {
+  font-size: large;
+  
+
+}
+    }
+
+    @media only screen and (max-width: 500px) {
+      #Intro {
+        font-size: large;
+      }
+
+
+
+      #Intro .hThree {
+        width: 80%;
+      }
+    }
+
+
+
+    #Intro {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  color: whitesmoke;
+
+}
+
+
+
+
+
+
+#Intro  .hOne {
+  animation-delay: 0s;
+  opacity: 0;
+  animation: fadeIn 3s backwards;
+
+
+}
+
+#Intro .hTwo {
+  animation-delay: 4s;
+  opacity: 0;
+  animation: fadeInT 8s forwards;
+
+}
+
+#Intro .hThree {
+ 
+  animation-delay: 8s;
+  opacity: 0;
+  animation: fadeInT 15s forwards;
+ 
+}
+
+.b {
+padding: 1%;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+  border-radius: 4%;
+
+}
+
+.b:hover  {
+  background-color: darkblue;
+  color: crimson;
+}
+@keyframes fadeIn {
+
+  0% {
+    opacity: 0;
+  }
+
+
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInT {
+
+50% {
+  opacity: 0;
+}
+
+
+
+75% {
+  opacity: 1;
+}
+
+100% {
+  opacity: 1;
+}
+}
+
+.skip {
+  font-size: large;
+  font-family: sans-serif;
+font-weight: bold;
+color: orangered;
+border-radius: 4%;
+padding: 0.5%;
+border: 2px solid purple;
+}
+
+#Contain {
+  display: none;
+  width: 100%;
+  background-image: linear-gradient(90deg, rgb(134, 107, 107), rgb(17, 74, 107), black);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ .header h1 {
+  color: orangered;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: burlywood;
+  border-radius: 4%;
+  padding: 0.5%;
+  border: 3px solid  black;
+}
+
+.header p {
+  font-size: large;
+          font-family: monospace;
+          font-weight: bold;
+          color: white;
+          text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <div id="Intro">
+    
+    <div class="hOne"><p>Hi are you interested in travel <br>
+    <button class="skip" onclick="Skip()">Skip All</button></p></div>
+    <div class="hTwo"><p>No worries for Tolu's ad is here</p>
+ </div>
+    <div class="hThree"><p>At tolu ad's we dont just offer jobs and fashion
+       but also the best travel deals that will satify
+      our wonderful  customers with each of them being 
+      rated at least 4 stars
+   
+    </p>
+    <button class="b" onclick="Remove()">Let's Begin</button>
+
+    </div>
+  </div><!--Intro -->
+
+  <div id="Contain">
+   <div class="header">
+<h1>Travel Deals</h1>
+<p>Explore the best travel deals - Affordable, 
+  Reliable, Unforgetabble!
+
+</p>
+   </div>
+
+   <div class="body">
+
+   </div>
+
+   <div class="footer">
+
+   </div>
+  </div>
+
+</body>
+</html>
+
+<script>
+
+  function Skip() {
+    const elems = document.querySelector("#Intro");
+elems.parentNode.removeChild(elems);
+ let testDive = document.getElementById("Contain");
+ testDive.style.display = "flex" 
+  }
+
+  if(Skip) {
+
+  } else {
+  setTimeout(() => {
+  const elem = document.querySelector(".hOne");
+  elem.parentNode.removeChild(elem);
+}, 4000);
+
+setTimeout(() => {
+  const elem = document.querySelector(".hTwo");
+  elem.parentNode.removeChild(elem);
+}, 7000);
+  }
+
+
+function Remove() {
+const elem = document.querySelector("#Intro");
+elem.parentNode.removeChild(elem);
+ let testDiv = document.getElementById("Contain");
+ testDiv.style.display = "flex"
+
+
+}
+
+</script>

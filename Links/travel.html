@@ -9,7 +9,7 @@
  margin: 0;
       width: 100%;
       background-color: deepskyblue;
-     
+  
     }
 
 
@@ -43,7 +43,7 @@ font-size: xx-large;
 }
 
 
- .footer .firstF {
+ .footer .firstF p{
 width: 800px;
 font-size: xx-large;
 }
@@ -95,13 +95,7 @@ font-size: scale(1);
       .header p {
         font-size: x-large;
       }
-      #Intro {
-        font-size: xx-large;
-      }
-
-      #Intro .hThree {
-        width: 50%;
-      }
+ 
 
       .b {
   font-size: xx-large;
@@ -141,14 +135,8 @@ font-size: x-large;
       .header p {
         font-size: large;
       }
-      #Intro {
-        font-size: x-large;
-      }
 
-      #Intro .hThree {
-        width: 70%;
-      }
-
+ 
       .b {
   font-size: x-large;
   
@@ -180,20 +168,23 @@ font-size: large;
  .footer .firstF {
 width: 50%;
 }
+
+.footer .secondF {
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(
+    250px, 1fr
+  ));
+  gap: 20px;
+  width: 100%;
+}
     }
 
-    @media only screen and (min-width: 500px) and (max-width: 699px) {
+    @media only screen and (min-width: 501px) and (max-width: 699px) {
      
       .header p {
         font-size: large;
       }
-      #Intro {
-        font-size: x-large;
-      }
-
-      #Intro .hThree {
-        width: 70%;
-      }
+    
 
       .b {
   font-size: large;
@@ -223,6 +214,27 @@ font-size: large;
  .footer .firstF {
 width: 70%;
 }
+
+  
+.footer .secondF{
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr;    
+  grid-template-rows: 1fr;
+      }
+      
+    .secondF .Cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .Cards img {
+      width: 100%;
+      height: 40vh;
+      object-fit: cover;
+    }
 }
     
 
@@ -231,15 +243,6 @@ width: 70%;
       
       .header p {
         font-size: large;
-      }
-      #Intro {
-        font-size: large;
-      }
-
-
-
-      #Intro .hThree {
-        width: 80%;
       }
 
       
@@ -268,11 +271,41 @@ font-size: medium;
  .footer .firstF {
 width: 80%;
 }
+
+  
+.footer .secondF{
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr;    
+  grid-template-rows: 1fr;
+      }
+      
+    .secondF .Cards {
+      width: 100%;
+    }
+    .Cards img {
+      width: 100%;
+      height:45vh;
+    }
+
     }
 
     @media only screen and (max-width:350px){
   
+      .footer .secondF{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;    
+  grid-template-rows: 1fr;
+      }
       
+    .secondF .Cards {
+      width: 90%;
+    }
+    .Cards img {
+      width: 100%;
+      height: 42vh;
+    }
       .header p {
         font-size: medium;
       }
@@ -304,102 +337,20 @@ font-size: large;
     }
 
 
-    #Intro {
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
-  color: whitesmoke;
-
-}
+  
 
 
 
 
 
 
-#Intro  .hOne {
-  animation-delay: 0s;
-  opacity: 0;
-  animation: fadeIn 3s backwards;
-
-
-}
-
-#Intro .hTwo {
-  animation-delay: 4s;
-  opacity: 0;
-  animation: fadeInT 8s forwards;
-
-}
-
-#Intro .hThree {
- 
-  animation-delay: 8s;
-  opacity: 0;
-  animation: fadeInT 15s forwards;
- 
-}
-
-.b {
-padding: 1%;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: bold;
-  border-radius: 4%;
-
-}
-
-.b:hover  {
-  background-color: darkblue;
-  color: crimson;
-}
-@keyframes fadeIn {
-
-  0% {
-    opacity: 0;
-  }
 
 
 
-  100% {
-    opacity: 1;
-  }
-}
 
-@keyframes fadeInT {
-
-50% {
-  opacity: 0;
-}
-
-
-
-75% {
-  opacity: 1;
-}
-
-100% {
-  opacity: 1;
-}
-}
-
-.skip {
-  font-size: large;
-  font-family: sans-serif;
-font-weight: bold;
-color: orangered;
-border-radius: 4%;
-padding: 0.5%;
-border: 2px solid purple;
-}
 
 #Contain {
-  display: none;
+  display: flex;
   width: 100%;
 
 
@@ -546,44 +497,369 @@ strong {
 }
 
 .footer .secondF{
-  width: 100%;
+
   display: grid;
-  grid-template-columns: 1fr 1fr;    
-  grid-template-rows: 1fr;
+
    justify-items: center;
   grid-column-gap: 20px;
   grid-row-gap: 35px;
   padding-top: 2%;
   padding-bottom: 2%;
+margin: 0;
 }
 
-.secondF div {
+
+
+.aF{
+
+
+  font-size: large;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: crimson;
+}
+
+
+
+
+#Container {
+            width: 100%;
+         display: grid;
+         grid-template-columns: 1fr 1fr;    
+         grid-template-rows: 1fr;
+         justify-items: center;
+        grid-column-gap: 20px;
+        grid-row-gap: 35px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        
+        }
+
+  
+       
+        
+        #Container .size {
+            width: 90%;
+        }
+
+        .size {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition:  transform 2s ease-in-out, box-shadow 1s ease, border-radius 0.5s ease;
+        
+             
+             background-color: gray;
+             
+          
+        }
+
+   .size:hover {
+    border-radius: 4%;
+    background-color: aliceblue;
+   transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(255, 250, 250, 0.692);
+   
+   }
+
+ 
+        .size div {
+           
+       
+          
+      
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkblue;
+
+          
+        }
+
+        .imageDiv {
+          width: 100%;
+      
+        
+}
+
+  
+        .Adiv {
+          width: 100%;
+          background-color: brown;
+          font-family: Roboto;
+        
+        color: white;
+       
+         font-size: large;
+         font-weight: bold;
+         font-family: Arial, Helvetica, sans-serif;
+      
+        }
+
+     
+        #Container .size img{
+            width: 100%;
+        
+
+        }
+
+        
+
+         
+    
+       
+
+      
+            
+
+
+
+
+
+
+
+@media only screen and (max-height: 680px) { 
+
+#Container .size img{
+
+height: 60vh;
+
+}
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 570px) {
+ 
+ 
+
+  #Container {
+            width: 50%;
+         display: grid;
+         grid-template-columns: 1fr;    
+         grid-template-rows: 1fr;
+         justify-items: center;
+        grid-gap: 20px;
+        
+        }
+      }
+
+      
+@media only screen and (max-width: 1000px) {
+  body {
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  }
+
+  #Container { 
+    width: 100%;
+  }
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+
+body {
+
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+
+#Container { 
+width: 100%;
+}
+
+.Adiv strong {
+        font-size: x-large;
+    }
+
+
+
+#Container div img{
+      width: 100%;
+     
+  }
+}
+
+
+@media only screen and (min-width: 1250px) {
+
+
+
+#Container { 
+width: 65%;
+}
+
+#Container div img{
+      width: 100%;
+      height: 60vh;
+     
+  }
+
+
+
+  
+
+
+
+}
+
+
+@media (min-height: 900px) and (min-width: 550px)  and (max-width: 1000px){
+
+
+#Container {
+        width: 70%;
+     display: grid;
+     grid-template-columns: 1fr;    
+     grid-template-rows: 1fr;
+     justify-items: center;
+    grid-gap: 20px;
+    
+    }
+
+    #Container div img{
   width: 100%;
-  height: 30vh;
-  border-radius: 4%;
+  height: 50vh;
  
 }
+
+
+.size button a {
+font-size: x-large;
+
+}
+
+.size button {
+padding: 1%;
+}
+
+.Adiv strong {
+font-size: x-large;
+padding: 1%;
+}
+}
+
+
+
+.size button {
+ 
+  font-size: x-large;
+  padding: 1%;
+  font-weight: bold;
+   
+  border-radius: 4%;
+  margin-top: 1%;
+  background-color: gold
+  ;
+
+}
+
+.size button a {
+  color: crimson;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+
+
+
+
+.size:hover button {
+    background-color: rgb(129, 12, 35);
+
+
+   }
+
+
+   
+.size:hover button a{
+ color: white;
+ text-decoration: underline gold;
+    
+
+   }
+
+   .a {
+    color: red;
+    text-decoration: none;
+    
+   }
+
+
+  
+   #Final {
+  width: 100%;
+  padding-bottom: 0%;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.final {
+
+  background-color: burlywood;
+  padding-bottom: 0%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+
+.final h2 {
+  color: Black;
+  font-family: sans-serif;
+}
+
+#Final .final button {
+  border-radius: 5%;
+padding: 0.5%;
+background-color: rgb(78, 13, 139);
+   
+}
+
+#Final .final button:hover {
+  background-color: black;
+
+}
+
+.final a {
+  font-size: x-large;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+
+.final button:hover a{
+  color: hotpink;
+} 
+
 
 
   </style>
 </head>
 <body>
-  <div id="Intro">
-    
-    <div class="hOne"><p>Hi are you interested in travel <br>
-    <button class="skip" onclick="Skip()">Skip All</button></p></div>
-    <div class="hTwo"><p>No worries for Tolu's ad is here</p>
- </div>
-    <div class="hThree"><p>At tolu ad's we dont just offer jobs and fashion
-       but also the best travel deals that will satify
-      our wonderful  customers with each of them being 
-      rated at least 4 stars
-   
-    </p>
-    <button class="b" onclick="Remove()">Let's Begin</button>
 
-    </div>
-  </div><!--Intro -->
 
   <div id="Contain">
    <div class="header">
@@ -601,8 +877,8 @@ strong {
   Your pocket even more than you do.
   <br>
   <br>
-<a  class="a" href="" target="_blank"><button>Plan
-   your next trip with WAKANOW
+
+ Plan your next trip with:<a  class="a" href="https://www.wakanow.com/en-ng/referral/Olaruks" target="_blank"><button> WAKANOW
   </button></a></p>
 </div>
 
@@ -638,74 +914,84 @@ Wakanow offers affordable flights, hotels,
 
    <div class="footer">
     <div class="firstF">
-<p>
+<p class="">
  Wakanow guarantees top-rated services and exclusive discounts
    to make your trip unforgettable!
 </p>
-
-
-
 </div>
 
-<div class="secondF">
-  <div><a href="">
-    <div><img src="" alt=""></div>
-    <div><p></p></div>
-  </a></div>
 
-  <div>
-    <a href="">
-      <div><img src="" alt=""></div>
-      <div><p></p></div>
-    </a>
+
+
+  <div id="Container">     
+    <div class="size">
+
+              <div class="imageDiv"> <img src="Travel Img/Airi.jpg" alt="">
+               </div>
+           
+              <div class="Adiv"><strong class="a">Afordable Flights</strong></p></div>
+              <button>
+                <a href="https://www.wakanow.com/en-ng/referral/Olaruks" target="_blank">
+                Book & Save
+              </a></button>   
+            </div>
+
+          
+            <div class="size">
+
+              <div class="imageDiv"> <img src="Travel Img/Insta.jpg" alt="">
+               </div>
+           
+              <div class="Adiv"><strong class="a">Pay Small Small</strong></p></div>
+             <button>
+               <a href="https://www.wakanow.com/en-ng/referral/Olaruks" target="_blank">Book & Save
+
+               </a></button> 
+             </div>
+           
+              <div class="size">
+           
+               <div class="imageDiv"> <img src="Travel Img/Hotel.jpg" alt="">
+                </div>
+            
+               <div class="Adiv"><strong class="a">Exclusive Vacation Packages</strong></p></div>
+                 <button>
+                   <a href="https://www.wakanow.com/en-ng/referral/Olaruks" target="_blank">Book & Save
+
+                   </a></button> 
+               </div>
+
+      
+     <div class="size">
+           
+  <div class="imageDiv"> <img src="Travel Img/Custo.jpg" alt="">
+   </div>
+
+  <div class="Adiv"><strong class="a">24/7 Travel Support</strong></p></div>
+    <button>
+      <a href="https://www.wakanow.com/en-ng/referral/Olaruks" target="_blank">Book & Save
+
+      </a></button> 
   </div>
 
-  <div><a href="">
-    <div><img src="" alt=""></div>
-    <div><p></p></div>
-  </a></div>
-
-  <div><a href="">
-    <div><img src="" alt=""></div>
-    <div><p></p></div>
-  </a></div>
 </div>
   </div>
+
+  
+<div id="Final">
+
+
+  <div class="final">
+         <h2>For more information about WAKANOW click the button below.  </h2>
+          <br>
+<button><a href="https://www.wakanow.com/en-ng/referral/Olaruks">WAKANOW!</a></button></h2> 
+</div>
+
+<p style="text-align: center; font-size: large; color: white; font-weight: bold;
+font-family: 'Courier New', Courier, monospace;">
+  &copy; 2025 Tolu's Ad's. All rights reserved.
+</p>
+</div>
 
 </body>
 </html>
-
-<script>
-
-  function Skip() {
-    const elems = document.querySelector("#Intro");
-elems.parentNode.removeChild(elems);
- let testDive = document.getElementById("Contain");
- testDive.style.display = "flex" 
-  }
-
-  if(Skip) {
-
-  } else {
-  setTimeout(() => {
-  const elem = document.querySelector(".hOne");
-  elem.parentNode.removeChild(elem);
-}, 4000);
-
-setTimeout(() => {
-  const elem = document.querySelector(".hTwo");
-  elem.parentNode.removeChild(elem);
-}, 7000);
-  }
-
-
-function Remove() {
-const elem = document.querySelector("#Intro");
-elem.parentNode.removeChild(elem);
- let testDiv = document.getElementById("Contain");
- testDiv.style.display = "flex"
-
-
-}
-
-</script>

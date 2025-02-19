@@ -5,14 +5,56 @@
         <style>
 
 
+
+
 @media only screen and (min-height: 1000px) { 
 
     a {
         font-size: x-large;
     }
 
+   
+
 
 }
+
+
+@media only screen and (max-width: 899px) { 
+
+    #head {
+          
+                font-size: large;
+    }
+
+#main {
+    width: 80%;
+    line-height: 1.5em;
+  
+
+}
+ol {
+font-size: large;
+
+}
+}
+
+@media only screen and (min-width: 900px) { 
+
+    #head {
+         
+                font-size: x-large;
+    }
+#main {
+    width: 50%;
+    line-height: 1.8em;
+}
+
+ol {
+font-size: x-large;
+
+}
+}
+
 
 
 
@@ -32,7 +74,7 @@
                background-color: darkcyan;
                padding-bottom: 2%;
                padding-top: 2%;
-                font-size: large;
+               
                
                 display: flex;
                 justify-content: space-around;
@@ -66,12 +108,13 @@
 
         #main {
     
-            width: 80%;
+            
             background-color: white;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+         
             
         }
         h1 {
@@ -87,8 +130,8 @@
             font-family: sans-serif;
             font-size: large;
             color: black;
-          
-            text-align: center;
+          text-align: center;
+            
             
         }
        
@@ -96,6 +139,17 @@
             display: none;
             width: 90%;
        
+        }
+
+        ol {
+            
+            font-weight: bold;
+            font-family: monospace;
+        }
+
+        ol a {
+            text-decoration: underline dotted black;
+            color: crimson;
         }
 
         button {
@@ -134,7 +188,7 @@
             <span><a href="Links/freelance.html" target="_blank">Freelance-Hub</a></span>
             <span><a href="Links/experts.html" target="_blank">Hire-Experts</a></span>
             <span><a href="Links/travel.html" target="_blank">Travel-Smarter</a></span>
-             <span><a href="Links/fashion.html" target="_blank">Fashion-deals</a></span>
+            <span><a href="Links/fashion.html" target="_blank">Fashion-deals</a></span>
              <span><a onclick="Gift()" href="Links/gift.html" target="_blank">Gift-Cards</a></span>
             </div>
         <div id="main">
@@ -144,9 +198,27 @@
             
             <h1>Tolu's <strong class="strong"> Ad's</strong>!</h1>
 
-            <p>Welcome to <strong>Tolu's Ad's</strong> where you get access to the best online jobs,
-            gift cards and exclusive fashion deals ohh and don't forget about the flaming hot deals.
-        <strong> For  exclusive deals click on one of the links above </strong></p>
+            <p>Welcome to <strong>Tolu's Ad's</strong>        Your Gateway to the Best Deals, Jobs & Travel Offers!
+                Looking for amazing discounts, freelance opportunities,
+                or travel deals? We've got everything you need—all in one place.
+            </p>   
+             <p> <strong style="text-align: center;"> For  exclusive deals click on one of the links above </strong></p>
+
+
+ 
+        <ol>
+    
+        <p>Explore Now:</p>
+        
+        <li><a href="Links/freelance.html">🔹 Freelance Hub </a>– Find freelance jobs & showcase your skills</li>
+       <li> <a href="Links/experts.html">🔹 Hire Experts </a>– Get professionals for your projects</li>
+       <li><a href="Links/travel.html" target="_blank">🔹 Fashion Deals </a> – Shop the latest trends & hot fashion sales</li> 
+       <li><a href="Links/fashion.html" target="_blank">🔹 Travel Deals </a> – Book flights, hotels & enjoy exclusive discounts</li>
+        <li><a  onclick="Gift()" href="Links/gift.html" target="_blank">🔹 Gift Cards </a> – Get free & discounted gift cards</li>
+        
+        <br><br>
+        📌 Don’t miss out! Explore now and grab the best deals
+        </ol>
 
             <button onclick="Clicked()">Terms of service</button>
          
@@ -201,6 +273,7 @@ We reserve the right to modify or update these Terms of Service at any time. Any
 If you have any questions or concerns regarding these Terms of Service, please contact us at olamideruks@gmail.com or +234 7031876205--
 </li>
 </ul>
+
 
         </div>
 

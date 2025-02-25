@@ -20,47 +20,8 @@
 
 
 
-@media only screen  and (min-width: 200px) and (max-width: 599px){ 
 
-#main {
-
-width: 90%;
-border-radius: 4%;
-
-}
-
-button {
-    font-size: large;
-}
-
-h1 {
-    font-size: large;
-}
-
-p {
-    font-size: medium;
-}
-
-.style {
-    font-size: small;
-}
-h2 {
-    font-size: large;
-}
-
-ol a {
-    
-    font-size: medium;
-}
-
-ol li {
-    font-size: medium;
-}
-}
-
-
-
-@media only screen  and (min-width: 600px) and (max-width: 799px){ 
+@media only screen  and (min-width: 100px) and (max-width: 799px){ 
 
 #main {
 
@@ -278,13 +239,13 @@ button {
         <br>
         <li><a href="Links/fashion.html" target="_blank">🔹 Travel Deals </a> – Book flights, hotels & enjoy exclusive discounts</li>
         <br>
-        <li><a  onclick="Gift()" href="Links/gift.html" target="_blank">🔹 Gift Cards </a> – Get free & discounted gift cards</li>
+        <li><a  onclick="Gift(event)" href="Links/gift.html" target="_blank">🔹 Gift Cards </a> – Get free & discounted gift cards</li>
         
         <br><br>
         📌 Don’t miss out! Explore now and grab the best deals
         </ol>
 
-            <button onclick="Clicked()">Terms of service</button>
+            <button id="click"  onclick="Clicked(event)">Terms of service</button>
          
 <ul id="done">
 
@@ -348,17 +309,17 @@ If you have any questions or concerns regarding these Terms of Service, please c
 </html>
 
 <script>
-    function Clicked() {
+    function Clicked(event) {
        
         document.getElementById("done").style.display = "flex";
         document.getElementById("done").style.justifyContent = "center";
         document.getElementById("done").style.flexDirection = "column";
         document.getElementById("done").style.alignItems= "center";
 
-        document.querySelector("button").remove()
+        document.getElementById("click").remove()
     }
 
-  function Gift() {
+  function Gift(event) {
     event.preventDefault();
     alert(`Gifts have been exhausted.`);
     alert(`Come back Next-Week`);
